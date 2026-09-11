@@ -197,6 +197,7 @@ img,svg{display:block;max-width:100%}
 .value{background:var(--paper);border-radius:var(--radius);padding:1.6rem;border:1px solid var(--line)}
 .value-art{height:130px;display:grid;place-items:center;margin-bottom:1.1rem;background:var(--tint);border-radius:14px}
 .value-art svg{height:100px;width:auto}
+.value-art img{width:100%;height:100%;object-fit:cover;border-radius:inherit}
 .value h3{margin-bottom:.5rem}
 .value p{color:var(--ink-soft);font-size:.95rem}
 
@@ -910,7 +911,7 @@ function renderPlans(){
 }
 function renderStatic(){
   $('#subArt').innerHTML=art(SUB_ART);
-  $('#valuesGrid').innerHTML=VALUES.map(v=>`<div class="value" style="--tint:${tint(v.color)}"><div class="value-art">${v.art()}</div><h3>${esc(L(v.title))}</h3><p>${esc(L(v.text))}</p></div>`).join('');
+  $('#valuesGrid').innerHTML=VALUES.map((v,i)=>`<div class="value" style="--tint:${tint(v.color)}"><div class="value-art"><img src="images/${['value-sharing','value-home','value-gift'][i]}.webp" alt="" width="1200" height="480" loading="lazy"></div><h3>${esc(L(v.title))}</h3><p>${esc(L(v.text))}</p></div>`).join('');
   $('#collectionGrid').innerHTML=COLLECTIONS.map(c=>`<button class="collection" type="button" data-q="${esc(rn(c.q))}" style="--tint:${tint(c.color)}"><div class="collection-art${c.image?' photo':''}">${c.image?`<img src="${c.image}" alt="" loading="lazy" width="1200" height="900">`:c.art()}</div><h3>${esc(rn(c.name))}</h3></button>`).join('');
   const cItems=COLLECTIONS.map(c=>`<button type="button" data-q="${esc(rn(c.q))}">${esc(rn(c.name))}</button>`).join('');
   $('#collectionMenu').innerHTML=cItems;$('#mobileCollections').innerHTML=cItems;
