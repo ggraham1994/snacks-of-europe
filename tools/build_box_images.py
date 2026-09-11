@@ -223,8 +223,13 @@ def compose(box, packs):
     d.polygon(P([(46, 128), (274, 128), (262, 220), (58, 220)]), fill=c)
     d.polygon(P([(46, 128), (22, 114), (30, 204), (58, 220)]), fill=cl)
     d.polygon(P([(274, 128), (298, 114), (290, 204), (262, 220)]), fill=cl)
-    draw_tracked(d, 'SNACKS OF EUROPE', 600, 672, font(FONT_BLACK, 56), (255, 255, 255, 255), 3)
-    draw_tracked(d, f"{box['country'].upper()} EDITION", 600, 728, font(FONT_BOLD, 30), (255, 255, 255, 225), 9)
+    title = f"{box['country'].upper()} EDITION"
+    title_size = 56
+    while title_size > 20 and sum(d.textlength(ch, font=font(FONT_BLACK, title_size)) for ch in title) + 2 * (len(title) - 1) > 700:
+        title_size -= 1
+    draw_tracked(d, title, 600, 672, font(FONT_BLACK, title_size), (255, 255, 255, 255), 2)
+    d.line((250, 709, 950, 709), fill=(255, 255, 255, 255), width=4)
+    draw_tracked(d, 'SNACKS OF EUROPE', 600, 743, font(FONT_BOLD, max(16, title_size // 2)), (255, 255, 255, 255), 3)
     stamp = Image.new('RGBA', (150, 120), (0, 0, 0, 0)); sd = ImageDraw.Draw(stamp)
     sd.rectangle((0, 0, 127, 97), fill=(255, 255, 255, 255)); sd.rectangle((11, 11, 116, 86), fill=(216, 35, 42, 255))
     sd.ellipse((45, 30, 82, 67), fill=(255, 255, 255, 255)); sd.ellipse((72, -14, 140, 54), outline=(255, 255, 255, 190), width=4)

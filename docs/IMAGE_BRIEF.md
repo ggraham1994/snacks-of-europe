@@ -6,9 +6,11 @@ file name, pixel size, format and (for hero cutouts) transparency. Replace the f
 the page picks it up; no HTML changes are needed.
 
 ## Brand look
-- Open cardboard box in the box's colour, front panel reading **SNACKS OF EUROPE** on the
-  first line and **<COUNTRY> EDITION** on the second, a small red postage stamp on the
-  panel's right, products standing inside and leaning outward.
+- Open cardboard box in the box's colour, front panel reading **<COUNTRY> EDITION** in
+  large bold white uppercase on top, a thin white divider line, then **SNACKS OF EUROPE**
+  in smaller white uppercase below (about half the top line's letter height). Keep a
+  small red postage stamp on the panel's right, products standing inside and leaning outward.
+  Apply the same lettering hierarchy to boxes appearing in lifestyle images.
 - Background: the box colour mixed 86% towards white, with a soft radial highlight.
 - Soft drop shadows under packs. No other text anywhere in the picture.
 - Colours per box are in `tools/boxes.json` (`color`).
