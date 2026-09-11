@@ -1,0 +1,733 @@
+[
+ {
+  "id": "de-20",
+  "country": "Germany",
+  "color": "#F4B400",
+  "products": [
+   {
+    "match": "Haribo Quaxi",
+    "asin": "B0BM48SXH1",
+    "image_url": "https://m.media-amazon.com/images/I/91U9oUhB67L.jpg"
+   },
+   {
+    "match": "Nimm 2 Lachgummi Shakies",
+    "asin": "B011TLZF1W",
+    "image_url": "https://m.media-amazon.com/images/I/61TA4eLgenL.jpg"
+   },
+   {
+    "match": "Sarotti Katzenzungen",
+    "asin": "B0CYGVDPG3",
+    "image_url": "https://m.media-amazon.com/images/I/813ztUZiXaL.jpg"
+   },
+   {
+    "match": "Gletschereis",
+    "asin": "B003TUIAVE",
+    "image_url": "https://m.media-amazon.com/images/I/51rY9OHXtTL.jpg"
+   },
+   {
+    "match": "Hanuta Minis",
+    "asin": "B000MWT804",
+    "image_url": "https://m.media-amazon.com/images/I/61vJncj-edL.jpg"
+   }
+  ]
+ },
+ {
+  "id": "it-16",
+  "country": "Italy",
+  "color": "#1F8A5B",
+  "products": [
+   {
+    "match": "BALCONI ROLLINO LATTE",
+    "asin": "B0057VQQ2S",
+    "image_url": "https://m.media-amazon.com/images/I/51glzQIFsDL.jpg"
+   },
+   {
+    "match": "SPERLARI GELEE DUETTO",
+    "image": 0,
+    "method": "white",
+    "note": "Amazon main image carries a fruit prop; the Airtable studio shot is cleaner"
+   },
+   {
+    "match": "BAIOCCHI GR 168 PISTACCHI",
+    "asin": "B0B1V8FQSQ",
+    "image_url": "https://m.media-amazon.com/images/I/81a6vVl53rL.jpg"
+   },
+   {
+    "match": "PAN DI STELLE",
+    "asin": "B0B75HVQDT",
+    "image_url": "https://m.media-amazon.com/images/I/61EaZoBIJCL.jpg"
+   },
+   {
+    "match": "RINGO TUBO",
+    "asin": "B01LXZX88E",
+    "image_url": "https://m.media-amazon.com/images/I/51jZzr2maPL.jpg",
+    "rotate": 90
+   }
+  ]
+ },
+ {
+  "id": "nl-18",
+  "country": "Netherlands",
+  "color": "#F28C28",
+  "products": [
+   {
+    "match": "Venco Eurolijn NL Drop",
+    "asin": "B0DM9N28M7",
+    "image_url": "https://m.media-amazon.com/images/I/81KRspNRZiL.jpg"
+   },
+   {
+    "match": "Katja Biggetjes",
+    "asin": "B0DSG8LH32",
+    "image_url": "https://m.media-amazon.com/images/I/61dtTcZaXOL.jpg"
+   },
+   {
+    "match": "Venco Droptoefjes",
+    "asin": "B0CJ9NPT11",
+    "image_url": "https://m.media-amazon.com/images/I/61zoxZWMaLL.jpg"
+   },
+   {
+    "match": "Frisia Zure",
+    "asin": "B00LT688OO",
+    "image_url": "https://m.media-amazon.com/images/I/61L8G2-8oWL.jpg"
+   },
+   {
+    "match": "Duyvis",
+    "asin": "B07TDLY18Y",
+    "image_url": "https://m.media-amazon.com/images/I/611D1BKIlKL.jpg"
+   }
+  ]
+ },
+ {
+  "id": "be-16",
+  "country": "Belgium",
+  "color": "#5D3A1A",
+  "products": [
+   {
+    "match": "Lu Bastogne",
+    "asin": "B075Z1Q5YK",
+    "image_url": "https://m.media-amazon.com/images/I/61fzaThd9oL.jpg"
+   },
+   {
+    "match": "Cote d'Or",
+    "asin": "B017217L4M",
+    "image_url": "https://m.media-amazon.com/images/I/61U4Xvqy30L.jpg"
+   },
+   {
+    "match": "Tuc Naturel",
+    "asin": "B000CDH06C",
+    "image_url": "https://m.media-amazon.com/images/I/614TxkwflLL.jpg"
+   },
+   {
+    "match": "Frisia Zure",
+    "asin": "B00LT688OO",
+    "image_url": "https://m.media-amazon.com/images/I/61L8G2-8oWL.jpg"
+   }
+  ]
+ },
+ {
+  "id": "eu-22",
+  "country": "Europe",
+  "color": "#2B4FA8",
+  "products": [
+   {
+    "match": "Lu Bastogne",
+    "asin": "B075Z1Q5YK",
+    "image_url": "https://m.media-amazon.com/images/I/61fzaThd9oL.jpg"
+   },
+   {
+    "match": "Haribo Quaxi",
+    "asin": "B0BM48SXH1",
+    "image_url": "https://m.media-amazon.com/images/I/91U9oUhB67L.jpg"
+   },
+   {
+    "match": "Cote d'Or",
+    "asin": "B017217L4M",
+    "image_url": "https://m.media-amazon.com/images/I/61U4Xvqy30L.jpg"
+   },
+   {
+    "match": "BAIOCCHI GR 168 PISTACCHI",
+    "asin": "B0B1V8FQSQ",
+    "image_url": "https://m.media-amazon.com/images/I/81a6vVl53rL.jpg"
+   },
+   {
+    "match": "Maoam Pinballs",
+    "asin": "B013P11QB2",
+    "image_url": "https://m.media-amazon.com/images/I/61BpdCCkeXL.jpg"
+   }
+  ]
+ },
+ {
+  "id": "sub-italy",
+  "country": "Italy",
+  "color": "#F5A524",
+  "products": [
+   {
+    "match": "RINGO TUBO",
+    "asin": "B01LXZX88E",
+    "image_url": "https://m.media-amazon.com/images/I/51jZzr2maPL.jpg",
+    "rotate": 90
+   },
+   {
+    "match": "BAIOCCHI GR 168 PISTACCHI",
+    "asin": "B0B1V8FQSQ",
+    "image_url": "https://m.media-amazon.com/images/I/81a6vVl53rL.jpg"
+   },
+   {
+    "match": "PAN DI STELLE",
+    "asin": "B0B75HVQDT",
+    "image_url": "https://m.media-amazon.com/images/I/61EaZoBIJCL.jpg"
+   }
+  ]
+ },
+ {
+  "id": "country-de",
+  "country": "Germany",
+  "color": "#F4B400",
+  "style": "cluster",
+  "products": [
+   {
+    "match": "Hanuta Minis",
+    "image_url": "https://m.media-amazon.com/images/I/61vJncj-edL.jpg"
+   },
+   {
+    "match": "Haribo Quaxi",
+    "image_url": "https://m.media-amazon.com/images/I/91U9oUhB67L.jpg"
+   },
+   {
+    "match": "Nimm 2 Lachgummi Shakies",
+    "image_url": "https://m.media-amazon.com/images/I/61TA4eLgenL.jpg"
+   }
+  ]
+ },
+ {
+  "id": "country-it",
+  "country": "Italy",
+  "color": "#1F8A5B",
+  "style": "cluster",
+  "products": [
+   {
+    "match": "RINGO TUBO",
+    "image_url": "https://m.media-amazon.com/images/I/51jZzr2maPL.jpg",
+    "rotate": 90
+   },
+   {
+    "match": "BAIOCCHI GR 168 PISTACCHI",
+    "image_url": "https://m.media-amazon.com/images/I/81a6vVl53rL.jpg"
+   },
+   {
+    "match": "PAN DI STELLE",
+    "image_url": "https://m.media-amazon.com/images/I/61EaZoBIJCL.jpg"
+   }
+  ]
+ },
+ {
+  "id": "country-nl",
+  "country": "Netherlands",
+  "color": "#F28C28",
+  "style": "cluster",
+  "products": [
+   {
+    "match": "Katja Biggetjes",
+    "image_url": "https://m.media-amazon.com/images/I/61dtTcZaXOL.jpg"
+   },
+   {
+    "match": "Venco Droptoefjes",
+    "image_url": "https://m.media-amazon.com/images/I/61zoxZWMaLL.jpg"
+   },
+   {
+    "match": "Duyvis",
+    "image_url": "https://m.media-amazon.com/images/I/611D1BKIlKL.jpg"
+   }
+  ]
+ },
+ {
+  "id": "country-be",
+  "country": "Belgium",
+  "color": "#5D3A1A",
+  "style": "cluster",
+  "products": [
+   {
+    "match": "Lu Bastogne",
+    "image_url": "https://m.media-amazon.com/images/I/61fzaThd9oL.jpg"
+   },
+   {
+    "match": "Cote d'Or",
+    "image_url": "https://m.media-amazon.com/images/I/61U4Xvqy30L.jpg"
+   },
+   {
+    "match": "Tuc Naturel",
+    "image_url": "https://m.media-amazon.com/images/I/614TxkwflLL.jpg"
+   }
+  ]
+ },
+ {
+  "id": "hero",
+  "style": "cutouts",
+  "color": "#D8232A",
+  "products": [
+   {
+    "match": "Haribo Quaxi",
+    "image_url": "https://m.media-amazon.com/images/I/91U9oUhB67L.jpg",
+    "slug": "haribo"
+   },
+   {
+    "match": "Gletschereis",
+    "image_url": "https://m.media-amazon.com/images/I/51rY9OHXtTL.jpg",
+    "slug": "gletschereis"
+   },
+   {
+    "match": "PAN DI STELLE",
+    "image_url": "https://m.media-amazon.com/images/I/61EaZoBIJCL.jpg",
+    "slug": "pandistelle"
+   },
+   {
+    "match": "Katja Biggetjes",
+    "image_url": "https://m.media-amazon.com/images/I/61dtTcZaXOL.jpg",
+    "slug": "katja"
+   },
+   {
+    "match": "Duyvis",
+    "image_url": "https://m.media-amazon.com/images/I/611D1BKIlKL.jpg",
+    "slug": "duyvis"
+   },
+   {
+    "match": "BAIOCCHI GR 168 PISTACCHI",
+    "image_url": "https://m.media-amazon.com/images/I/81a6vVl53rL.jpg",
+    "slug": "baiocchi"
+   },
+   {
+    "match": "Cote d'Or",
+    "image_url": "https://m.media-amazon.com/images/I/61U4Xvqy30L.jpg",
+    "slug": "cotedor"
+   },
+   {
+    "match": "Nimm 2 Lachgummi Shakies",
+    "image_url": "https://m.media-amazon.com/images/I/61TA4eLgenL.jpg",
+    "slug": "nimm2"
+   },
+   {
+    "match": "Tuc Naturel",
+    "image_url": "https://m.media-amazon.com/images/I/614TxkwflLL.jpg",
+    "slug": "tuc"
+   },
+   {
+    "match": "Venco Droptoefjes",
+    "image_url": "https://m.media-amazon.com/images/I/61zoxZWMaLL.jpg",
+    "slug": "venco"
+   },
+   {
+    "match": "Hanuta Minis",
+    "image_url": "https://m.media-amazon.com/images/I/61vJncj-edL.jpg",
+    "slug": "hanuta"
+   },
+   {
+    "match": "Lu Bastogne",
+    "image_url": "https://m.media-amazon.com/images/I/61fzaThd9oL.jpg",
+    "slug": "lu"
+   },
+   {
+    "match": "RINGO TUBO",
+    "image_url": "https://m.media-amazon.com/images/I/51jZzr2maPL.jpg",
+    "slug": "ringo",
+    "rotate": 90
+   },
+   {
+    "match": "Maoam Pinballs",
+    "image_url": "https://m.media-amazon.com/images/I/61BpdCCkeXL.jpg",
+    "slug": "maoam"
+   }
+  ]
+ },
+ {
+  "id": "coll-chocolates",
+  "country": "Chocolates",
+  "color": "#5D3A1A",
+  "style": "cluster",
+  "products": [
+   {
+    "match": "Sarotti Katzenzungen",
+    "image_url": "https://m.media-amazon.com/images/I/813ztUZiXaL.jpg"
+   },
+   {
+    "match": "Cote d'Or",
+    "image_url": "https://m.media-amazon.com/images/I/61U4Xvqy30L.jpg"
+   },
+   {
+    "match": "Hanuta Minis",
+    "image_url": "https://m.media-amazon.com/images/I/61vJncj-edL.jpg"
+   }
+  ]
+ },
+ {
+  "id": "coll-biscuits",
+  "country": "Biscuits",
+  "color": "#8B5A2B",
+  "style": "cluster",
+  "products": [
+   {
+    "match": "RINGO TUBO",
+    "image_url": "https://m.media-amazon.com/images/I/51jZzr2maPL.jpg",
+    "rotate": 90
+   },
+   {
+    "match": "BAIOCCHI GR 168 PISTACCHI",
+    "image_url": "https://m.media-amazon.com/images/I/81a6vVl53rL.jpg"
+   },
+   {
+    "match": "Lu Bastogne",
+    "image_url": "https://m.media-amazon.com/images/I/61fzaThd9oL.jpg"
+   }
+  ]
+ },
+ {
+  "id": "coll-sweets",
+  "country": "Sweets",
+  "color": "#8E44AD",
+  "style": "cluster",
+  "products": [
+   {
+    "match": "Katja Biggetjes",
+    "image_url": "https://m.media-amazon.com/images/I/61dtTcZaXOL.jpg"
+   },
+   {
+    "match": "Haribo Quaxi",
+    "image_url": "https://m.media-amazon.com/images/I/91U9oUhB67L.jpg"
+   },
+   {
+    "match": "Maoam Pinballs",
+    "image_url": "https://m.media-amazon.com/images/I/61BpdCCkeXL.jpg"
+   }
+  ]
+ },
+ {
+  "id": "coll-crisps",
+  "country": "Crisps",
+  "color": "#E63946",
+  "style": "cluster",
+  "products": [
+   {
+    "match": "Duyvis",
+    "image_url": "https://m.media-amazon.com/images/I/611D1BKIlKL.jpg"
+   },
+   {
+    "match": "Tuc Naturel",
+    "image_url": "https://m.media-amazon.com/images/I/614TxkwflLL.jpg"
+   }
+  ]
+ },
+ {
+  "id": "coll-tea",
+  "country": "Tea & coffee",
+  "color": "#1F8A5B",
+  "style": "cluster",
+  "products": [
+   {
+    "name": "Teekanne Waldbeere",
+    "image_url": "https://m.media-amazon.com/images/I/61k1MlJ7EJL.jpg"
+   },
+   {
+    "name": "Jacobs 3in1 Classic",
+    "image_url": "https://m.media-amazon.com/images/I/814Um8EvsTL.jpg"
+   },
+   {
+    "name": "Teekanne Persischer Granatapfel",
+    "image_url": "https://m.media-amazon.com/images/I/81is8B9zSWL.jpg"
+   }
+  ]
+ },
+ {
+  "id": "coll-pantry",
+  "country": "Pantry & spreads",
+  "color": "#F28C28",
+  "style": "cluster",
+  "products": [
+   {
+    "name": "Agrisicilia crema di pistacchio",
+    "image_url": "https://m.media-amazon.com/images/I/61UNawIgdjL.jpg"
+   },
+   {
+    "name": "Pisti crema di pistacchio",
+    "image_url": "https://m.media-amazon.com/images/I/71alc1hdegL.jpg"
+   },
+   {
+    "name": "Mutti Polpa",
+    "image_url": "https://m.media-amazon.com/images/I/71k1vgBCOML.jpg",
+    "note": "Hela ketchup listing has only a placeholder image"
+   }
+  ]
+ },
+ {
+  "id": "pl-15",
+  "country": "Poland",
+  "color": "#D8232A",
+  "products": [
+   {
+    "name": "Lajkonik Paluszki",
+    "image_url": "https://m.media-amazon.com/images/I/61iL+mzz1nL.jpg",
+    "source": "amazon.co.uk listing, not Global Select stock"
+   },
+   {
+    "name": "Prince Polo XXL wafer",
+    "image_url": "https://m.media-amazon.com/images/I/61kCL1+YHiL.jpg",
+    "source": "amazon.co.uk listing, not Global Select stock"
+   },
+   {
+    "name": "E. Wedel Ptasie Mleczko",
+    "image_url": "https://m.media-amazon.com/images/I/815MDr53n5L.jpg",
+    "source": "amazon.co.uk listing, not Global Select stock"
+   },
+   {
+    "name": "Sliwka Naleczowska",
+    "image_url": "https://m.media-amazon.com/images/I/81W+qLB7iOS.jpg",
+    "source": "amazon.co.uk listing, not Global Select stock"
+   }
+  ]
+ },
+ {
+  "id": "fr-15",
+  "country": "France",
+  "color": "#2B4FA8",
+  "products": [
+   {
+    "name": "LU Palmito",
+    "image_url": "https://m.media-amazon.com/images/I/415oVaBgIwL.jpg",
+    "source": "amazon.co.uk listing, not Global Select stock"
+   },
+   {
+    "name": "Gavottes Crepe Dentelle",
+    "image_url": "https://m.media-amazon.com/images/I/71emIdjXyRL.jpg",
+    "source": "amazon.co.uk listing, not Global Select stock"
+   },
+   {
+    "name": "St Michel Madeleines",
+    "image_url": "https://m.media-amazon.com/images/I/51Ju59To4VL.jpg",
+    "source": "amazon.co.uk listing, not Global Select stock"
+   },
+   {
+    "name": "Bonne Maman Galettes",
+    "image_url": "https://m.media-amazon.com/images/I/81OsIwKDO8L.jpg",
+    "source": "amazon.co.uk listing, not Global Select stock"
+   },
+   {
+    "name": "Carambar Caramel",
+    "image_url": "https://m.media-amazon.com/images/I/41jA8qc54oL.jpg",
+    "source": "amazon.co.uk listing, not Global Select stock"
+   }
+  ],
+  "white_thresh": 250
+ },
+ {
+  "id": "es-16",
+  "country": "Spain",
+  "color": "#E63946",
+  "products": [
+   {
+    "name": "Kikos fried corn",
+    "image_url": "https://m.media-amazon.com/images/I/61UOp43MfbL.jpg",
+    "source": "amazon.co.uk listing, not Global Select stock"
+   },
+   {
+    "name": "Torres Black Truffle crisps",
+    "image_url": "https://m.media-amazon.com/images/I/51JWHGjolaL.jpg",
+    "source": "amazon.co.uk listing, not Global Select stock"
+   },
+   {
+    "name": "El Almendro Turron",
+    "image_url": "https://m.media-amazon.com/images/I/71sLyKCcLcL.jpg",
+    "source": "amazon.co.uk listing, not Global Select stock"
+   },
+   {
+    "name": "Conguitos",
+    "image_url": "https://m.media-amazon.com/images/I/51CbuolUJFL.jpg",
+    "source": "amazon.co.uk listing, not Global Select stock"
+   },
+   {
+    "name": "El Artesano Polvorones",
+    "image_url": "https://m.media-amazon.com/images/I/71jDttkHKmL.jpg",
+    "source": "amazon.co.uk listing, not Global Select stock"
+   }
+  ],
+  "white_thresh": 250
+ },
+ {
+  "id": "se-18",
+  "country": "Sweden",
+  "color": "#2E86DE",
+  "products": [
+   {
+    "name": "Fazer Dumle",
+    "image_url": "https://m.media-amazon.com/images/I/71+DRNxbCLL.jpg",
+    "source": "amazon.co.uk listing, not Global Select stock"
+   },
+   {
+    "name": "Annas Ginger Thins",
+    "image_url": "https://m.media-amazon.com/images/I/71ACaenbtSL.jpg",
+    "source": "amazon.co.uk listing, not Global Select stock"
+   },
+   {
+    "name": "Daim minis",
+    "image_url": "https://m.media-amazon.com/images/I/61p8UkIYlaL.jpg",
+    "source": "amazon.co.uk listing, not Global Select stock"
+   },
+   {
+    "name": "Cloetta Kexchoklad",
+    "image_url": "https://m.media-amazon.com/images/I/91q2lJdq1RL.jpg",
+    "source": "amazon.co.uk listing, not Global Select stock"
+   },
+   {
+    "name": "Wasa Husman crispbread",
+    "image_url": "https://m.media-amazon.com/images/I/513piC97-4L.jpg",
+    "source": "amazon.co.uk listing, not Global Select stock"
+   }
+  ]
+ },
+ {
+  "id": "uk-classic",
+  "country": "United Kingdom",
+  "color": "#2D3E8F",
+  "products": [
+   {
+    "name": "Walkers Squares Salt & Vinegar",
+    "image_url": "https://m.media-amazon.com/images/I/41yGf4-BuUL.jpg",
+    "source": "amazon.co.uk listing, not Global Select stock"
+   },
+   {
+    "name": "Cadbury Dairy Milk Buttons",
+    "image_url": "https://m.media-amazon.com/images/I/61rKo-SLzAL.jpg",
+    "source": "amazon.co.uk listing, not Global Select stock"
+   },
+   {
+    "name": "Maynards Bassetts Wine Gums",
+    "image_url": "https://m.media-amazon.com/images/I/61j0c6HLRgL.jpg",
+    "source": "amazon.co.uk listing, not Global Select stock"
+   },
+   {
+    "name": "McVitie's Digestives",
+    "image_url": "https://m.media-amazon.com/images/I/41oCSAmdOeL.jpg",
+    "source": "amazon.co.uk listing, not Global Select stock"
+   },
+   {
+    "name": "Walkers Shortbread Fingers",
+    "image_url": "https://m.media-amazon.com/images/I/81h16kA4iwL.jpg",
+    "source": "amazon.co.uk listing, not Global Select stock"
+   }
+  ]
+ },
+ {
+  "id": "country-pl",
+  "country": "Poland",
+  "color": "#D8232A",
+  "style": "cluster",
+  "products": [
+   {
+    "name": "Prince Polo XXL wafer",
+    "image_url": "https://m.media-amazon.com/images/I/61kCL1+YHiL.jpg",
+    "source": "amazon.co.uk listing, not Global Select stock"
+   },
+   {
+    "name": "E. Wedel Ptasie Mleczko",
+    "image_url": "https://m.media-amazon.com/images/I/815MDr53n5L.jpg",
+    "source": "amazon.co.uk listing, not Global Select stock"
+   },
+   {
+    "name": "Lajkonik Paluszki",
+    "image_url": "https://m.media-amazon.com/images/I/61iL+mzz1nL.jpg",
+    "source": "amazon.co.uk listing, not Global Select stock"
+   }
+  ]
+ },
+ {
+  "id": "country-fr",
+  "country": "France",
+  "color": "#2B4FA8",
+  "style": "cluster",
+  "products": [
+   {
+    "name": "Bonne Maman Galettes",
+    "image_url": "https://m.media-amazon.com/images/I/81OsIwKDO8L.jpg",
+    "source": "amazon.co.uk listing, not Global Select stock"
+   },
+   {
+    "name": "St Michel Madeleines",
+    "image_url": "https://m.media-amazon.com/images/I/51Ju59To4VL.jpg",
+    "source": "amazon.co.uk listing, not Global Select stock"
+   },
+   {
+    "name": "Gavottes Crepe Dentelle",
+    "image_url": "https://m.media-amazon.com/images/I/71emIdjXyRL.jpg",
+    "source": "amazon.co.uk listing, not Global Select stock"
+   }
+  ],
+  "white_thresh": 250
+ },
+ {
+  "id": "country-es",
+  "country": "Spain",
+  "color": "#E63946",
+  "style": "cluster",
+  "products": [
+   {
+    "name": "Torres Black Truffle crisps",
+    "image_url": "https://m.media-amazon.com/images/I/51JWHGjolaL.jpg",
+    "source": "amazon.co.uk listing, not Global Select stock"
+   },
+   {
+    "name": "El Almendro Turron",
+    "image_url": "https://m.media-amazon.com/images/I/71sLyKCcLcL.jpg",
+    "source": "amazon.co.uk listing, not Global Select stock"
+   },
+   {
+    "name": "Conguitos",
+    "image_url": "https://m.media-amazon.com/images/I/51CbuolUJFL.jpg",
+    "source": "amazon.co.uk listing, not Global Select stock"
+   }
+  ],
+  "white_thresh": 250
+ },
+ {
+  "id": "country-se",
+  "country": "Sweden",
+  "color": "#2E86DE",
+  "style": "cluster",
+  "products": [
+   {
+    "name": "Annas Ginger Thins",
+    "image_url": "https://m.media-amazon.com/images/I/71ACaenbtSL.jpg",
+    "source": "amazon.co.uk listing, not Global Select stock"
+   },
+   {
+    "name": "Daim minis",
+    "image_url": "https://m.media-amazon.com/images/I/61p8UkIYlaL.jpg",
+    "source": "amazon.co.uk listing, not Global Select stock"
+   },
+   {
+    "name": "Cloetta Kexchoklad",
+    "image_url": "https://m.media-amazon.com/images/I/91q2lJdq1RL.jpg",
+    "source": "amazon.co.uk listing, not Global Select stock"
+   }
+  ]
+ },
+ {
+  "id": "country-uk",
+  "country": "United Kingdom",
+  "color": "#2D3E8F",
+  "style": "cluster",
+  "products": [
+   {
+    "name": "Cadbury Dairy Milk Buttons",
+    "image_url": "https://m.media-amazon.com/images/I/61rKo-SLzAL.jpg",
+    "source": "amazon.co.uk listing, not Global Select stock"
+   },
+   {
+    "name": "Maynards Bassetts Wine Gums",
+    "image_url": "https://m.media-amazon.com/images/I/61j0c6HLRgL.jpg",
+    "source": "amazon.co.uk listing, not Global Select stock"
+   },
+   {
+    "name": "Walkers Shortbread Fingers",
+    "image_url": "https://m.media-amazon.com/images/I/81h16kA4iwL.jpg",
+    "source": "amazon.co.uk listing, not Global Select stock"
+   }
+  ]
+ }
+]
