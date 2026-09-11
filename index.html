@@ -18,7 +18,7 @@
   color-scheme:light;
   --red:#D8232A;--red-deep:#A8171D;--amber:#F5A524;--amber-deep:#C97F07;
   --ivory:#FFF7EA;--paper:#FFFFFF;--ink:#1C1A2E;--ink-soft:#5A5670;--line:#EADFCB;
-  --custard:#FFE7B8;--green:#1F8A5B;--blue:#2B4FA8;
+  --custard:#FFE7B8;--green:#1F8A5B;--blue:#2B4FA8;--eu-blue:#003399;--eu-yellow:#FFCC00;
   --shadow:0 18px 40px rgba(28,26,46,.12);
   --display:"Bricolage Grotesque","Arial Black",Impact,"Helvetica Neue",sans-serif;
   --body:"Figtree",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
@@ -48,7 +48,7 @@ img,svg{display:block;max-width:100%}
 .btn-amber:hover{background:#FFB43A}
 .btn-amber:active{transform:translateY(2px);box-shadow:0 1px 0 var(--amber-deep)}
 .btn-ghost{background:transparent;border-color:currentColor}
-.btn-ghost:hover{background:rgba(255,255,255,.12)}
+.btn-ghost:hover{background:rgba(255,255,255,.14)}
 .btn-ink{background:var(--ink);color:#fff}
 .btn-sm{padding:.55rem 1.1rem;font-size:.85rem}
 .btn-block{width:100%}
@@ -104,14 +104,14 @@ img,svg{display:block;max-width:100%}
 .region-switch button.on{background:var(--amber);color:var(--ink)}
 
 /* hero */
-.hero{background:var(--red);color:#fff;position:relative;overflow:hidden;isolation:isolate}
+.hero{background:var(--eu-blue);color:#fff;position:relative;overflow:hidden;isolation:isolate}
 .hero::before,.hero::after{content:"";position:absolute;border-radius:50%;background:rgba(255,255,255,.07);z-index:-1}
 .hero::before{width:560px;height:560px;left:-180px;bottom:-300px}
 .hero::after{width:380px;height:380px;right:-100px;top:-180px}
 .hero-inner{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.05fr);align-items:center;gap:2.5rem;padding-block:3.5rem 3rem}
-.hero .eyebrow{color:var(--custard)}
+.hero .eyebrow{color:var(--eu-yellow)}
 .hero h1{font-size:clamp(2.7rem,5.4vw,4.6rem)}
-.hero h1 em{font-style:normal;color:var(--custard)}
+.hero h1 em{font-style:normal;color:var(--eu-yellow)}
 .hero-sub{font-size:1.12rem;max-width:46ch;margin-top:1.25rem;opacity:.96}
 .hero-ctas{display:flex;gap:.9rem;flex-wrap:wrap;margin-top:1.8rem}
 .hero-trust{margin-top:1.5rem;display:flex;align-items:center;gap:.65rem;font-size:.92rem;font-weight:600;flex-wrap:wrap}
@@ -119,7 +119,7 @@ img,svg{display:block;max-width:100%}
 .hero-trust .dot{opacity:.6}
 .hero-art{position:relative;height:520px;--s:1}
 .confetti{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
-.packet{position:absolute;left:var(--x);top:var(--y);height:calc(var(--h) * var(--s));rotate:var(--r);filter:drop-shadow(0 20px 22px rgba(70,0,0,.35));animation:settle .9s cubic-bezier(.2,.8,.2,1) both;animation-delay:var(--d,0s)}
+.packet{position:absolute;left:var(--x);top:var(--y);height:calc(var(--h) * var(--s));rotate:var(--r);filter:drop-shadow(0 20px 22px rgba(0,8,60,.45));animation:settle .9s cubic-bezier(.2,.8,.2,1) both;animation-delay:var(--d,0s)}
 .packet img,.packet svg{height:100%;width:auto;display:block}
 @keyframes settle{from{translate:0 -30px}to{translate:0 0}}
 
@@ -716,15 +716,11 @@ function giftArt(c){
 </svg>`;
 }
 function confettiSVG(){
-  let s=0x2F6E2B1,parts='';
-  const rnd=()=>{s^=s<<13;s^=s>>>17;s^=s<<5;return ((s>>>0)%1000)/1000};
-  for(let i=0;i<18;i++){
-    const x=r1(rnd()*100),y=r1(rnd()*100),k=rnd(),sz=r1(1.2+rnd()*1.8),rot=Math.round(rnd()*360);
-    if(k<.45)parts+=`<polygon points="0,${sz} ${r1(sz/2)},0 ${sz},${sz}" transform="translate(${x} ${y}) rotate(${rot})" fill="#fff" opacity=".22"/>`;
-    else if(k<.8)parts+=`<circle cx="${x}" cy="${y}" r="${r1(sz/3)}" fill="#FFE7B8" opacity=".35"/>`;
-    else parts+=`<rect x="${x}" y="${y}" width="${sz}" height="${r1(sz/3)}" rx=".3" transform="rotate(${rot} ${x} ${y})" fill="#fff" opacity=".18"/>`;
-  }
-  return `<svg class="confetti" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">${parts}</svg>`;
+  const star=(cx,cy,r)=>{let pts=[];for(let i=0;i<10;i++){const a=-Math.PI/2+i*Math.PI/5,rr=i%2?r*0.42:r;pts.push((cx+rr*Math.cos(a)).toFixed(2)+','+(cy+rr*Math.sin(a)).toFixed(2));}return `<polygon points="${pts.join(' ')}" fill="#FFCC00"/>`;};
+  let ring='';for(let i=0;i<12;i++){const a=i*Math.PI/6;ring+=star(62+30*Math.cos(a),50+30*Math.sin(a)*1.05,3.2);}
+  let s=0x2F6E2B1,specks='';const rnd=()=>{s^=s<<13;s^=s>>>17;s^=s<<5;return ((s>>>0)%1000)/1000};
+  for(let i=0;i<10;i++){specks+=`<circle cx="${(rnd()*100).toFixed(1)}" cy="${(rnd()*100).toFixed(1)}" r="${(0.4+rnd()*0.6).toFixed(2)}" fill="#FFCC00" opacity=".35"/>`;}
+  return `<svg class="confetti" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg"><g opacity=".16">${ring}</g>${specks}</svg>`;
 }
 
 /* ---------- regions ---------- */
