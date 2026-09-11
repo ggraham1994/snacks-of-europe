@@ -1,0 +1,1041 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="European snacks delivered to your door. Boxes from Germany, Italy, the Netherlands, Belgium, Poland, France, Spain and more, picked by locals.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 48 48%27%3E%3Crect x=%274%27 y=%2712%27 width=%2740%27 height=%2730%27 rx=%277%27 fill=%27%23F5A524%27/%3E%3Crect x=%2728%27 y=%2724%27 width=%2712%27 height=%2714%27 rx=%271.5%27 fill=%27%23fff%27/%3E%3Crect x=%2730%27 y=%2726%27 width=%278%27 height=%2710%27 fill=%27%23D8232A%27/%3E%3C/svg%3E">
+<style>html{color-scheme:light}body{margin:0;font:14px system-ui,sans-serif;background:#faf8f5}img{max-width:100%}[hidden]{display:none!important}</style>
+<title>Snacks of Europe</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Figtree:wght@400;500;600;700&display=swap">
+</head>
+<body>
+<style>
+*,*::before,*::after{box-sizing:border-box}
+:root{
+  color-scheme:light;
+  --red:#D8232A;--red-deep:#A8171D;--amber:#F5A524;--amber-deep:#C97F07;
+  --ivory:#FFF7EA;--paper:#FFFFFF;--ink:#1C1A2E;--ink-soft:#5A5670;--line:#EADFCB;
+  --custard:#FFE7B8;--green:#1F8A5B;--blue:#2B4FA8;
+  --shadow:0 18px 40px rgba(28,26,46,.12);
+  --display:"Bricolage Grotesque","Arial Black",Impact,"Helvetica Neue",sans-serif;
+  --body:"Figtree",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  --radius:20px;
+}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}}
+body{margin:0;background:var(--ivory);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.55;-webkit-font-smoothing:antialiased}
+h1,h2,h3,h4{font-family:var(--display);font-weight:800;line-height:1.05;letter-spacing:-.02em;margin:0;text-wrap:balance}
+h2{font-size:clamp(1.85rem,3.4vw,2.7rem)}
+h3{font-size:1.15rem;line-height:1.25}
+p{margin:0}
+a{color:inherit}
+button{font:inherit;color:inherit;cursor:pointer}
+img,svg{display:block;max-width:100%}
+:focus-visible{outline:3px solid var(--blue);outline-offset:3px}
+.wrap{width:min(1200px,100% - 2.5rem);margin-inline:auto}
+.section{padding-block:clamp(3rem,6vw,5.5rem)}
+.section-head{display:flex;align-items:flex-end;justify-content:space-between;gap:1.5rem;flex-wrap:wrap;margin-bottom:2rem}
+.section-head p{color:var(--ink-soft);max-width:56ch;margin-top:.5rem}
+.eyebrow{font-size:.76rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--red);margin-bottom:.6rem}
+.link-arrow{font-weight:700;text-decoration:none;color:var(--red);white-space:nowrap}
+.link-arrow:hover{text-decoration:underline}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;padding:.85rem 1.6rem;border-radius:999px;font-weight:700;font-size:.95rem;border:2px solid transparent;text-decoration:none;white-space:nowrap;transition:transform .15s ease,box-shadow .15s ease,background .15s ease;line-height:1.2}
+.btn:hover{transform:translateY(-2px)}
+.btn-amber{background:var(--amber);color:var(--ink);box-shadow:0 4px 0 var(--amber-deep)}
+.btn-amber:hover{background:#FFB43A}
+.btn-amber:active{transform:translateY(2px);box-shadow:0 1px 0 var(--amber-deep)}
+.btn-ghost{background:transparent;border-color:currentColor}
+.btn-ghost:hover{background:rgba(255,255,255,.12)}
+.btn-ink{background:var(--ink);color:#fff}
+.btn-sm{padding:.55rem 1.1rem;font-size:.85rem}
+.btn-block{width:100%}
+
+/* top bars */
+.airmail{height:7px;background:repeating-linear-gradient(-45deg,var(--red) 0 16px,#fff 16px 30px,var(--blue) 30px 46px,#fff 46px 60px)}
+.announce{background:var(--ink);color:#fff;text-align:center;font-size:.86rem;font-weight:600;padding:.55rem 1rem;display:flex;justify-content:center;align-items:center;gap:.5rem}
+.announce svg{width:18px;height:18px;color:var(--amber)}
+.announce strong{color:var(--amber)}
+
+/* header */
+.site-header{position:sticky;top:0;z-index:60;background:var(--paper);border-bottom:1px solid var(--line)}
+.header-inner{display:flex;align-items:center;gap:1rem;padding-block:.7rem}
+.brand{display:flex;align-items:center;gap:.6rem;text-decoration:none;font-family:var(--display);font-weight:800;font-size:1.2rem;letter-spacing:-.02em;line-height:1;margin-right:.5rem}
+.brand svg{width:40px;height:40px;flex:none}
+.brand small{display:block;font-family:var(--body);font-weight:600;font-size:.62rem;letter-spacing:.16em;text-transform:uppercase;color:var(--red);margin-top:.25rem}
+.primary{display:flex;gap:.15rem;list-style:none;margin:0;padding:0}
+.primary>li{position:relative}
+.primary>li>a,.primary>li>button{display:inline-flex;align-items:center;gap:.35rem;padding:.5rem .7rem;border-radius:999px;background:none;border:0;font-weight:600;font-size:.9rem;text-decoration:none;white-space:nowrap}
+.primary>li>a:hover,.primary>li>button:hover,.primary>li:focus-within>button{background:var(--ivory)}
+.primary .chev{width:12px;height:12px;opacity:.6}
+.menu{position:absolute;top:calc(100% + 6px);left:0;min-width:230px;background:var(--paper);border:1px solid var(--line);border-radius:16px;padding:.5rem;box-shadow:var(--shadow);display:none;z-index:5}
+.menu.wide{min-width:320px;grid-template-columns:1fr 1fr}
+.primary>li:hover>.menu,.primary>li:focus-within>.menu{display:block}
+.primary>li:hover>.menu.wide,.primary>li:focus-within>.menu.wide{display:grid}
+.menu a,.menu button{display:flex;align-items:center;gap:.6rem;padding:.55rem .7rem;border-radius:10px;text-decoration:none;font-size:.92rem;font-weight:500;background:none;border:0;width:100%;text-align:left}
+.menu a:hover,.menu button:hover{background:var(--ivory)}
+.menu .f{font-size:1.2rem;line-height:1;font-family:"Apple Color Emoji","Segoe UI Emoji","Noto Color Emoji",sans-serif}
+.search{flex:1 1 150px;min-width:0;max-width:400px;position:relative;margin-left:auto}
+.search input{width:100%;padding:.68rem 3rem .68rem 1.1rem;border-radius:999px;border:2px solid var(--line);background:var(--ivory);font:inherit;font-size:.93rem;color:var(--ink)}
+.search input:focus{border-color:var(--amber);outline:0}
+.search button{position:absolute;right:5px;top:5px;bottom:5px;width:36px;border-radius:50%;border:0;background:var(--amber);display:grid;place-items:center;padding:0}
+.search button svg{width:16px;height:16px}
+.actions{display:flex;align-items:center;gap:.4rem}
+.icon-btn{display:flex;flex-direction:column;align-items:center;gap:.2rem;background:none;border:0;font-size:.7rem;font-weight:600;padding:.3rem .55rem;border-radius:10px;position:relative;line-height:1}
+.icon-btn:hover{background:var(--ivory)}
+.icon-btn svg{width:22px;height:22px}
+.icon-btn .count{position:absolute;top:-2px;right:0;min-width:18px;height:18px;padding:0 5px;border-radius:9px;background:var(--red);color:#fff;font-size:.68rem;font-weight:700;display:grid;place-items:center}
+.icon-btn .count[hidden]{display:none}
+.burger{display:none;background:none;border:0;padding:.4rem;border-radius:10px}
+.burger svg{width:26px;height:26px}
+.mobile-nav{display:none;border-top:1px solid var(--line);background:var(--paper);padding:.75rem 0 1.25rem}
+.mobile-nav.open{display:block}
+.mobile-nav ul{list-style:none;margin:0;padding:0;display:grid;gap:.1rem}
+.mobile-nav li>a{display:block;padding:.6rem .4rem;font-weight:700;text-decoration:none;border-radius:8px}
+.mobile-nav .sub{display:flex;flex-wrap:wrap;gap:.4rem;padding:0 .4rem .8rem}
+.mobile-nav .sub a,.mobile-nav .sub button{padding:.4rem .75rem;border:1px solid var(--line);border-radius:999px;font-size:.85rem;font-weight:500;text-decoration:none;background:var(--paper)}
+.mobile-nav .sub .f{margin-right:.3rem}
+.mobile-nav .mn-head{display:block;padding:.6rem .4rem;font-weight:700}
+.mobile-nav .sub button.on,.menu button.on{background:var(--custard)}
+.region-switch{display:inline-flex;border:1px solid rgba(255,255,255,.25);border-radius:999px;padding:3px;gap:2px}
+.region-switch button{border:0;background:none;color:rgba(255,255,255,.75);font-weight:700;font-size:.78rem;padding:.35rem .8rem;border-radius:999px}
+.region-switch button.on{background:var(--amber);color:var(--ink)}
+
+/* hero */
+.hero{background:var(--red);color:#fff;position:relative;overflow:hidden;isolation:isolate}
+.hero::before,.hero::after{content:"";position:absolute;border-radius:50%;background:rgba(255,255,255,.07);z-index:-1}
+.hero::before{width:560px;height:560px;left:-180px;bottom:-300px}
+.hero::after{width:380px;height:380px;right:-100px;top:-180px}
+.hero-inner{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.05fr);align-items:center;gap:2.5rem;padding-block:3.5rem 3rem}
+.hero .eyebrow{color:var(--custard)}
+.hero h1{font-size:clamp(2.7rem,5.4vw,4.6rem)}
+.hero h1 em{font-style:normal;color:var(--custard)}
+.hero-sub{font-size:1.12rem;max-width:46ch;margin-top:1.25rem;opacity:.96}
+.hero-ctas{display:flex;gap:.9rem;flex-wrap:wrap;margin-top:1.8rem}
+.hero-trust{margin-top:1.5rem;display:flex;align-items:center;gap:.65rem;font-size:.92rem;font-weight:600;flex-wrap:wrap}
+.stars{color:var(--amber);letter-spacing:.06em;font-size:1rem;white-space:nowrap}
+.hero-trust .dot{opacity:.6}
+.hero-art{position:relative;height:520px;--s:1}
+.confetti{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
+.packet{position:absolute;left:var(--x);top:var(--y);height:calc(var(--h) * var(--s));rotate:var(--r);filter:drop-shadow(0 20px 22px rgba(70,0,0,.35));animation:settle .9s cubic-bezier(.2,.8,.2,1) both;animation-delay:var(--d,0s)}
+.packet img,.packet svg{height:100%;width:auto;display:block}
+@keyframes settle{from{translate:0 -30px}to{translate:0 0}}
+
+/* trust strip */
+.trust{background:var(--paper);border-bottom:1px solid var(--line)}
+.trust-inner{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;padding-block:1.1rem}
+.trust-item{display:flex;align-items:center;gap:.7rem;font-weight:600;font-size:.92rem;justify-content:center}
+.trust-item svg{width:28px;height:28px;color:var(--red);flex:none}
+
+/* countries */
+.country-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.1rem}
+.country{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);padding:.6rem .6rem 1.2rem;text-align:center;transition:transform .2s ease,box-shadow .2s ease,border-color .2s ease;display:block;width:100%}
+.country:hover{transform:translateY(-4px);box-shadow:var(--shadow);border-color:var(--amber)}
+.country-art{aspect-ratio:4/3;border-radius:14px;overflow:hidden;background:var(--tint);display:grid;place-items:center;margin-bottom:.9rem;position:relative}
+.country-art .cflag{position:absolute;top:.55rem;left:.55rem;background:rgba(255,255,255,.94);border-radius:999px;padding:.2rem .5rem;font-size:1.15rem;line-height:1;box-shadow:0 2px 8px rgba(0,0,0,.18);font-family:"Apple Color Emoji","Segoe UI Emoji","Noto Color Emoji",sans-serif}
+.country-art img{width:100%;height:100%;object-fit:cover;display:block}
+.flag{font-size:3rem;line-height:1;font-family:"Apple Color Emoji","Segoe UI Emoji","Noto Color Emoji",sans-serif}
+.country h3{font-size:1.1rem}
+.country .meta{font-size:.85rem;color:var(--ink-soft);margin-top:.35rem}
+.country .from{display:inline-block;margin-top:.7rem;font-weight:700;color:var(--red);font-size:.9rem}
+
+/* products */
+.product-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.25rem}
+.product{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;display:flex;flex-direction:column;position:relative;transition:transform .2s ease,box-shadow .2s ease}
+.product:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
+.product-art{aspect-ratio:4/3;background:var(--tint);display:grid;place-items:center;padding:.75rem;position:relative;cursor:pointer;border:0;width:100%;font:inherit}
+.product-art svg{width:100%;height:100%}
+.product-art.photo{padding:0}
+.product-art img,.qv-art img,.line .thumb img{width:100%;height:100%;object-fit:cover;display:block}
+.qv-art.photo{padding:0}
+.qv-art.photo img{object-fit:contain;background:var(--tint)}
+.line .thumb.photo{padding:0;overflow:hidden}
+.sub-art img{width:min(100%,440px);height:auto;border-radius:18px;box-shadow:0 24px 40px rgba(0,0,0,.45)}
+.badge{position:absolute;top:.8rem;left:.8rem;background:var(--ink);color:#fff;font-size:.68rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:.3rem .6rem;border-radius:999px;z-index:1}
+.badge.new{background:var(--amber);color:var(--ink)}
+.quick{position:absolute;right:.8rem;bottom:.8rem;background:rgba(255,255,255,.96);border:0;border-radius:999px;padding:.4rem .8rem;font-size:.78rem;font-weight:700;opacity:0;transform:translateY(6px);transition:opacity .2s,transform .2s;box-shadow:0 4px 12px rgba(0,0,0,.12);pointer-events:none}
+.product:hover .quick,.product:focus-within .quick{opacity:1;transform:none}
+.product-body{padding:1rem 1.1rem 1.15rem;display:flex;flex-direction:column;gap:.4rem;flex:1}
+.product-name{font-weight:700;font-size:1rem;line-height:1.3;font-family:var(--body)}
+.product-country{font-size:.78rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-soft)}
+.rating{font-size:.84rem;color:var(--ink-soft);display:flex;align-items:center;gap:.4rem}
+.rating .stars{font-size:.85rem}
+.price-row{display:flex;align-items:center;justify-content:space-between;margin-top:auto;padding-top:.5rem;gap:.5rem}
+.price{font-family:var(--display);font-weight:800;font-size:1.35rem;font-variant-numeric:tabular-nums;letter-spacing:-.02em}
+.results-note{font-size:.92rem;color:var(--ink-soft);margin:-.75rem 0 1.25rem;display:flex;gap:.75rem;align-items:center}
+.results-note[hidden]{display:none}
+.results-note button{background:none;border:0;color:var(--red);font-weight:700;text-decoration:underline;padding:0}
+.empty{grid-column:1/-1;text-align:center;padding:3rem 1rem;color:var(--ink-soft)}
+
+/* subscription band */
+.sub-band{background:var(--ink);color:#fff;border-radius:28px;display:grid;grid-template-columns:1.05fr 1fr;overflow:hidden;position:relative}
+.sub-art{position:relative;min-height:400px;background:radial-gradient(circle at 50% 60%,#3B3764 0,#1C1A2E 72%);display:grid;place-items:center;padding:2.5rem}
+.sub-art svg{width:min(100%,440px);height:auto;filter:drop-shadow(0 24px 30px rgba(0,0,0,.4))}
+.stamp{position:absolute;top:1.5rem;left:1.5rem;background:var(--paper);color:var(--ink);padding:.7rem .9rem .6rem;font-weight:700;font-size:.78rem;line-height:1.2;rotate:-6deg;outline:2px dashed var(--red);outline-offset:-7px;box-shadow:0 8px 20px rgba(0,0,0,.35)}
+.stamp strong{display:block;font-family:var(--display);font-size:1.15rem;color:var(--red);margin-top:.15rem}
+.sub-copy{padding:3rem 3rem 3rem 2.5rem;display:flex;flex-direction:column;justify-content:center;gap:1.1rem}
+.sub-copy .eyebrow{color:var(--amber);margin:0}
+.sub-copy h2{color:#fff}
+.sub-copy>p{color:rgba(255,255,255,.8)}
+.plans{display:grid;gap:.55rem;margin-top:.25rem}
+.plan{display:flex;align-items:center;gap:.9rem;padding:.8rem 1rem;border:2px solid rgba(255,255,255,.18);border-radius:14px;cursor:pointer;transition:border-color .15s,background .15s}
+.plan:hover{border-color:rgba(255,255,255,.45)}
+.plan input{accent-color:var(--amber);width:18px;height:18px;margin:0;flex:none}
+.plan.selected{border-color:var(--amber);background:rgba(245,165,36,.1)}
+.plan .pl-text{display:flex;flex-direction:column;gap:.1rem;min-width:0}
+.plan .pl-name{font-weight:700}
+.plan .pl-meta{font-size:.82rem;color:rgba(255,255,255,.7)}
+.plan .pl-price{margin-left:auto;font-family:var(--display);font-weight:800;font-size:1.15rem;font-variant-numeric:tabular-nums;text-align:right;line-height:1.1}
+.plan .pl-price small{display:block;font-family:var(--body);font-weight:500;font-size:.72rem;color:rgba(255,255,255,.65)}
+.save{background:var(--amber);color:var(--ink);font-size:.66rem;font-weight:800;padding:.18rem .5rem;border-radius:999px;margin-left:.4rem;letter-spacing:.04em;vertical-align:middle}
+.sub-copy .fine{font-size:.82rem;color:rgba(255,255,255,.6)}
+
+/* values */
+.values-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}
+.value{background:var(--paper);border-radius:var(--radius);padding:1.6rem;border:1px solid var(--line)}
+.value-art{height:130px;display:grid;place-items:center;margin-bottom:1.1rem;background:var(--tint);border-radius:14px}
+.value-art svg{height:100px;width:auto}
+.value h3{margin-bottom:.5rem}
+.value p{color:var(--ink-soft);font-size:.95rem}
+
+/* collections */
+.collection-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:1rem}
+.collection{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);padding:1rem 1rem 1.1rem;text-decoration:none;text-align:center;transition:transform .2s,box-shadow .2s;display:block;width:100%}
+.collection:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
+.collection-art{height:120px;display:grid;place-items:center;background:var(--tint);border-radius:14px;margin-bottom:.8rem;overflow:hidden}
+.collection-art svg{height:92px;width:auto}
+.collection-art.photo{height:auto;aspect-ratio:4/3}
+.collection-art img{width:100%;height:100%;object-fit:cover;display:block}
+.collection h3{font-size:.98rem}
+.collection .meta{font-size:.8rem;color:var(--ink-soft);margin-top:.25rem}
+
+/* reviews */
+.reviews{background:var(--paper);border-block:1px solid var(--line)}
+.review-nav{display:flex;gap:.5rem}
+.review-nav button{width:42px;height:42px;border-radius:50%;border:2px solid var(--line);background:var(--paper);display:grid;place-items:center;padding:0}
+.review-nav button:hover{border-color:var(--ink)}
+.review-nav svg{width:18px;height:18px}
+.review-track{display:flex;gap:1.25rem;overflow-x:auto;scroll-snap-type:x mandatory;padding:.25rem .25rem 1rem;scrollbar-width:none;margin-inline:-.25rem}
+.review-track::-webkit-scrollbar{display:none}
+.review{flex:0 0 min(360px,84vw);scroll-snap-align:start;background:var(--ivory);border-radius:var(--radius);padding:1.5rem;display:flex;flex-direction:column;gap:.8rem}
+.review-head{display:flex;align-items:center;gap:.8rem}
+.avatar{width:44px;height:44px;border-radius:50%;display:grid;place-items:center;font-family:var(--display);font-weight:800;color:#fff;font-size:.95rem;flex:none}
+.review-head .who{font-weight:700;font-size:.95rem}
+.review-head .where{font-size:.8rem;color:var(--ink-soft)}
+.review q{quotes:none;font-size:1rem;line-height:1.5}
+.review .bought{font-size:.8rem;color:var(--ink-soft);margin-top:auto;padding-top:.6rem;border-top:1px dashed var(--line)}
+.review .bought b{color:var(--green)}
+
+/* stats */
+.stats{background:var(--custard)}
+.stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;padding-block:2.5rem;text-align:center}
+.stat b{display:block;font-family:var(--display);font-weight:800;font-size:clamp(1.9rem,3.4vw,2.6rem);letter-spacing:-.03em;color:var(--red);font-variant-numeric:tabular-nums;line-height:1}
+.stat span{font-size:.9rem;font-weight:600;color:var(--ink-soft);display:block;margin-top:.45rem}
+
+/* faq */
+.faq-wrap{max-width:820px;margin-inline:auto}
+.faq-wrap .section-head{justify-content:center;text-align:center;flex-direction:column;align-items:center}
+.faq details{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:0 1.25rem;margin-bottom:.6rem}
+.faq details[open]{border-color:var(--amber)}
+.faq summary{cursor:pointer;font-weight:700;padding:1rem 0;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:1rem}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";font-family:var(--display);font-size:1.4rem;line-height:1;color:var(--red);flex:none;width:28px;height:28px;display:grid;place-items:center;border-radius:50%;background:var(--ivory)}
+.faq details[open] summary::after{content:"–"}
+.faq .answer{padding:0 0 1.1rem;color:var(--ink-soft);max-width:65ch}
+
+/* footer */
+.footer{background:var(--ink);color:#fff;padding-top:3.5rem}
+.footer-grid{display:grid;grid-template-columns:1.6fr 1fr 1fr 1.5fr;gap:2.5rem}
+.footer h4{font-family:var(--body);font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:var(--amber);margin-bottom:1rem}
+.footer ul{list-style:none;margin:0;padding:0;display:grid;gap:.5rem}
+.footer a{text-decoration:none;color:rgba(255,255,255,.82);font-size:.95rem}
+.footer a:hover{color:#fff;text-decoration:underline}
+.footer .about{color:rgba(255,255,255,.7);font-size:.95rem;margin-top:1rem;max-width:36ch}
+.footer .brand{color:#fff}
+.footer .brand small{color:var(--amber)}
+.newsletter{display:flex;gap:.5rem;margin-top:.25rem}
+.newsletter input{flex:1;padding:.7rem 1rem;border-radius:999px;border:2px solid rgba(255,255,255,.2);background:rgba(255,255,255,.06);color:#fff;font:inherit;min-width:0}
+.newsletter input::placeholder{color:rgba(255,255,255,.5)}
+.newsletter input:focus{border-color:var(--amber);outline:0}
+.footer .note{font-size:.82rem;color:rgba(255,255,255,.6);margin-top:.6rem}
+.footer .thanks{background:rgba(245,165,36,.15);border:1px solid rgba(245,165,36,.4);border-radius:14px;padding:.9rem 1rem;font-weight:600;font-size:.92rem}
+.socials{display:flex;gap:.6rem;margin-top:1.25rem}
+.socials a{width:38px;height:38px;border-radius:50%;border:1px solid rgba(255,255,255,.25);display:grid;place-items:center}
+.socials a:hover{background:rgba(255,255,255,.1)}
+.socials svg{width:18px;height:18px}
+.footer-bottom{border-top:1px solid rgba(255,255,255,.12);margin-top:3rem;padding:1.5rem 0 1.75rem;display:flex;justify-content:space-between;align-items:center;gap:1rem;flex-wrap:wrap;font-size:.82rem;color:rgba(255,255,255,.6)}
+.payments{display:flex;gap:.4rem;flex-wrap:wrap}
+.payments span{background:#fff;color:var(--ink);font-size:.62rem;font-weight:800;letter-spacing:.04em;padding:.32rem .5rem;border-radius:5px;line-height:1}
+
+/* basket drawer */
+.scrim{position:fixed;inset:0;background:rgba(28,26,46,.5);z-index:90;opacity:0;pointer-events:none;transition:opacity .25s}
+.scrim.show{opacity:1;pointer-events:auto}
+.drawer{position:fixed;top:0;right:0;bottom:0;width:min(430px,100%);background:var(--paper);z-index:100;transform:translateX(105%);transition:transform .3s cubic-bezier(.2,.8,.2,1);display:flex;flex-direction:column;box-shadow:-20px 0 50px rgba(0,0,0,.2)}
+.drawer.open{transform:none}
+.drawer-head{display:flex;align-items:center;justify-content:space-between;padding:1.1rem 1.25rem;border-bottom:1px solid var(--line)}
+.drawer-head h3{font-size:1.3rem}
+.close-x{background:none;border:0;width:36px;height:36px;border-radius:50%;display:grid;place-items:center;padding:0}
+.close-x:hover{background:var(--ivory)}
+.close-x svg{width:18px;height:18px}
+.ship-bar{padding:.9rem 1.25rem;background:var(--ivory);font-size:.85rem;font-weight:600}
+.ship-bar .track{height:8px;border-radius:4px;background:var(--line);margin-top:.5rem;overflow:hidden}
+.ship-bar .fill{height:100%;background:var(--green);border-radius:4px;transition:width .3s;width:0}
+.drawer-items{flex:1;overflow-y:auto;padding:1rem 1.25rem;display:grid;gap:1rem;align-content:start}
+.line{display:grid;grid-template-columns:72px 1fr auto;gap:.9rem;align-items:start}
+.line .thumb{width:72px;height:60px;border-radius:10px;background:var(--tint);display:grid;place-items:center;padding:.3rem}
+.line .thumb svg{width:100%;height:100%}
+.line .nm{font-weight:700;font-size:.9rem;line-height:1.25}
+.line .unit{font-size:.8rem;color:var(--ink-soft);margin-top:.2rem}
+.qty{display:inline-flex;align-items:center;border:1px solid var(--line);border-radius:999px;margin-top:.5rem}
+.qty button{width:28px;height:28px;border:0;background:none;font-weight:700;border-radius:50%;padding:0}
+.qty button:hover{background:var(--ivory)}
+.qty span{min-width:24px;text-align:center;font-size:.9rem;font-weight:700;font-variant-numeric:tabular-nums}
+.line .lp{font-weight:800;font-family:var(--display);font-variant-numeric:tabular-nums;text-align:right}
+.line .rm{background:none;border:0;font-size:.75rem;color:var(--ink-soft);text-decoration:underline;padding:0;margin-top:.5rem;display:block;margin-left:auto}
+.drawer-empty{text-align:center;color:var(--ink-soft);padding:3rem 1rem;display:grid;gap:1rem;justify-items:center}
+.drawer-foot{border-top:1px solid var(--line);padding:1.1rem 1.25rem 1.4rem;display:grid;gap:.75rem}
+.subtotal{display:flex;justify-content:space-between;align-items:center;font-weight:700}
+.subtotal b{font-family:var(--display);font-size:1.25rem;font-variant-numeric:tabular-nums}
+.drawer-foot small{color:var(--ink-soft);font-size:.8rem;text-align:center}
+
+/* dialogs */
+dialog{border:0;border-radius:24px;padding:0;max-width:min(760px,92vw);width:100%;box-shadow:0 30px 80px rgba(0,0,0,.3);background:var(--paper);color:var(--ink)}
+dialog::backdrop{background:rgba(28,26,46,.55)}
+.qv{display:grid;grid-template-columns:1fr 1fr}
+.qv-art{background:var(--tint);display:grid;place-items:center;padding:2rem;min-height:320px}
+.qv-art svg{width:100%;height:auto}
+.qv-body{padding:2rem 2rem 1.75rem;display:flex;flex-direction:column;gap:.8rem;position:relative}
+.qv-body h3{font-size:1.5rem;padding-right:2rem}
+.qv-body .eyebrow{margin:0}
+.qv-body .desc{color:var(--ink-soft);font-size:.95rem}
+.qv-body ul{margin:0;padding-left:1.1rem;color:var(--ink-soft);font-size:.9rem;display:grid;gap:.2rem}
+.qv-body .close-x{position:absolute;top:.9rem;right:.9rem}
+.qv-body .price-row{margin-top:.5rem}
+.offer{max-width:460px;text-align:center;padding:2.5rem 2rem 1.75rem}
+.offer-badge{width:96px;height:96px;border-radius:50%;background:var(--red);color:#fff;display:grid;place-items:center;margin:0 auto 1.2rem;font-family:var(--display);font-weight:800;font-size:1.7rem;line-height:1;rotate:-8deg;box-shadow:0 10px 24px rgba(216,35,42,.35)}
+.offer-badge small{display:block;font-size:.66rem;letter-spacing:.12em;font-family:var(--body);font-weight:700;margin-top:.2rem}
+.offer h3{font-size:1.9rem}
+.offer p{color:var(--ink-soft);margin-top:.6rem}
+.offer form{display:grid;gap:.6rem;margin-top:1.4rem}
+.offer input{padding:.8rem 1rem;border-radius:999px;border:2px solid var(--line);font:inherit;text-align:center;color:var(--ink)}
+.offer input:focus{border-color:var(--amber);outline:0}
+.nothanks{background:none;border:0;color:var(--ink-soft);font-size:.85rem;text-decoration:underline;margin-top:.75rem}
+.offer .code{background:var(--custard);padding:1rem;border-radius:14px;margin-top:1.2rem;font-weight:600;font-size:.92rem}
+.offer .code b{font-family:var(--display);font-size:1.6rem;letter-spacing:.1em;display:block;color:var(--red);margin:.2rem 0 .5rem}
+.offer-tab{position:fixed;left:1rem;bottom:1rem;z-index:80;background:var(--amber);color:var(--ink);border:0;border-radius:999px;padding:.7rem 1.1rem;font-weight:800;font-size:.85rem;box-shadow:0 10px 24px rgba(0,0,0,.2);display:flex;align-items:center;gap:.4rem}
+.offer-tab:hover{background:#FFB43A}
+.offer-tab[hidden]{display:none}
+.toast{position:fixed;left:50%;bottom:1.5rem;translate:-50% 20px;background:var(--ink);color:#fff;padding:.8rem 1.2rem;border-radius:999px;font-weight:600;font-size:.9rem;opacity:0;transition:opacity .25s,translate .25s;z-index:120;pointer-events:none;box-shadow:0 10px 30px rgba(0,0,0,.25);max-width:90vw;text-align:center}
+.toast.show{opacity:1;translate:-50% 0}
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+/* responsive */
+@media (max-width:1240px){
+  .btn-build{display:none}
+}
+@media (max-width:1080px){
+  .product-grid{grid-template-columns:repeat(3,1fr)}
+  .collection-grid{grid-template-columns:repeat(3,1fr)}
+}
+@media (max-width:960px){
+  .primary{display:none}
+  .burger{display:block}
+  .btn-build{display:none}
+  .search{max-width:none}
+  .hero-inner{grid-template-columns:1fr;padding-block:2.5rem 0;gap:1.5rem}
+  .hero-art{height:300px;--s:.66}
+  .packet.lg{display:none}
+  .trust-inner{grid-template-columns:repeat(2,1fr)}
+  .sub-band{grid-template-columns:1fr}
+  .sub-art{min-height:320px}
+  .sub-copy{padding:2rem 1.5rem 2.25rem}
+  .values-grid{grid-template-columns:1fr}
+  .footer-grid{grid-template-columns:1fr 1fr}
+  .qv{grid-template-columns:1fr}
+  .qv-art{min-height:220px}
+  .stats-grid{grid-template-columns:repeat(2,1fr)}
+}
+@media (max-width:640px){
+  .header-inner{flex-wrap:wrap;gap:.6rem .75rem}
+  .search{order:5;flex-basis:100%;margin-left:0}
+  .actions{margin-left:auto}
+  .brand small{display:none}
+  .country-grid{grid-template-columns:repeat(2,1fr)}
+  .product-grid{grid-template-columns:repeat(2,1fr);gap:.8rem}
+  .collection-grid{grid-template-columns:repeat(2,1fr)}
+  .product-body{padding:.8rem}
+  .price{font-size:1.15rem}
+  .hero-art{height:250px;--s:.52}
+  .trust-inner{grid-template-columns:1fr 1fr;font-size:.85rem}
+  .footer-grid{grid-template-columns:1fr}
+  .section-head{margin-bottom:1.4rem}
+  .offer-tab{left:.75rem;bottom:.75rem}
+}
+</style>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="i-search" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></symbol>
+    <symbol id="i-user" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></symbol>
+    <symbol id="i-basket" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M5 8h14l-1.2 12H6.2z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></symbol>
+    <symbol id="i-burger" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+    <symbol id="i-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></symbol>
+    <symbol id="i-x" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></symbol>
+    <symbol id="i-left" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5l-7 7 7 7"/></symbol>
+    <symbol id="i-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5l7 7-7 7"/></symbol>
+    <symbol id="i-truck" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M3 7h11v9H3zM14 10h4l3 3v3h-7z"/><circle cx="7" cy="18" r="1.7" fill="currentColor" stroke="none"/><circle cx="17" cy="18" r="1.7" fill="currentColor" stroke="none"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v5c0 5-3.5 8.5-7 10-3.5-1.5-7-5-7-10V6z"/><path d="M9 12l2 2 4-4"/></symbol>
+    <symbol id="i-box" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M3 8l9-4 9 4v9l-9 4-9-4z"/><path d="M3 8l9 4 9-4M12 12v9"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M12 21s-7-5.2-7-11a7 7 0 0 1 14 0c0 5.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></symbol>
+    <symbol id="i-ig" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor" stroke="none"/></symbol>
+    <symbol id="i-tt" viewBox="0 0 24 24" fill="currentColor"><path d="M14 3h3c.3 2.4 1.8 3.9 4 4.2v3c-1.5 0-2.9-.5-4-1.3V15a6 6 0 1 1-6-6v3a3 3 0 1 0 3 3z"/></symbol>
+    <symbol id="i-fb" viewBox="0 0 24 24" fill="currentColor"><path d="M14 8h3V4h-3c-2.8 0-4 1.8-4 4v2H7v4h3v7h4v-7h3l1-4h-4V8.5c0-.3.2-.5.5-.5z"/></symbol>
+    <symbol id="i-pt" viewBox="0 0 24 24" fill="currentColor"><path d="M12 3a9 9 0 0 0-3.3 17.4c-.1-.8-.1-2 .1-2.8l1.2-5s-.3-.6-.3-1.5c0-1.4.8-2.4 1.8-2.4.9 0 1.3.6 1.3 1.4 0 .9-.5 2.1-.8 3.3-.2 1 .5 1.8 1.5 1.8 1.8 0 3.1-1.9 3.1-4.5 0-2.4-1.7-4-4.1-4-2.8 0-4.5 2.1-4.5 4.3 0 .9.3 1.8.7 2.3.1.1.1.2.1.3l-.3 1.1c0 .2-.2.2-.3.1-1.2-.5-1.9-2.2-1.9-3.6 0-2.9 2.1-5.6 6.2-5.6 3.2 0 5.7 2.3 5.7 5.4 0 3.2-2 5.8-4.9 5.8-1 0-1.9-.5-2.2-1.1l-.6 2.3c-.2.8-.8 1.9-1.2 2.5A9 9 0 1 0 12 3z"/></symbol>
+  </defs>
+</svg>
+
+<div class="airmail" aria-hidden="true"></div>
+<div class="announce"><svg><use href="#i-truck"/></svg><span id="announceText">Free UK delivery on orders over <strong>£40</strong> &nbsp;·&nbsp; Ships in 2–4 working days</span></div>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="#top" aria-label="Snacks of Europe home">
+      <svg viewBox="0 0 48 48" aria-hidden="true"><rect x="4" y="12" width="40" height="30" rx="7" fill="#F5A524"/><path d="M4 19a7 7 0 0 1 7-7h26a7 7 0 0 1 7 7v3H4z" fill="#D98A0B"/><path d="M24 12v30" stroke="#FFF7EA" stroke-width="4" opacity=".85"/><rect x="28" y="24" width="12" height="14" rx="1.5" fill="#fff"/><rect x="30" y="26" width="8" height="10" fill="#D8232A"/><circle cx="34" cy="31" r="2.2" fill="#fff"/></svg>
+      <span>Snacks of Europe<small>Snacks from home</small></span>
+    </a>
+    <ul class="primary">
+      <li><button type="button" aria-haspopup="true">Countries <svg class="chev"><use href="#i-chev"/></svg></button><div class="menu wide" id="countryMenu"></div></li>
+      <li><a href="#bestsellers">Boxes</a></li>
+      <li><button type="button" aria-haspopup="true">Collections <svg class="chev"><use href="#i-chev"/></svg></button><div class="menu" id="collectionMenu"></div></li>
+      <li><a href="#subscribe">Subscribe</a></li>
+      <li><a href="#gifting">Gifting</a></li>
+      <li class="loc"><button type="button" id="regionBtn" aria-haspopup="true" aria-label="Change location"><span id="regionLabel">🇬🇧 UK</span> <svg class="chev"><use href="#i-chev"/></svg></button><div class="menu" id="regionMenu"></div></li>
+    </ul>
+    <form class="search" role="search" id="searchForm">
+      <input id="searchInput" type="search" placeholder="Search stroopwafels, wafers, Poland…" aria-label="Search snacks" autocomplete="off">
+      <button type="submit" aria-label="Search"><svg><use href="#i-search"/></svg></button>
+    </form>
+    <div class="actions">
+      <button class="icon-btn" type="button" id="accountBtn"><svg><use href="#i-user"/></svg>Login</button>
+      <button class="icon-btn" type="button" id="basketBtn" aria-label="Open basket"><svg><use href="#i-basket"/></svg><span id="basketTotal">£0.00</span><span class="count" id="basketCount" hidden>0</span></button>
+      <a class="btn btn-amber btn-sm btn-build" href="#subscribe">Get started</a>
+    </div>
+    <button class="burger" type="button" id="burger" aria-expanded="false" aria-controls="mobileNav" aria-label="Menu"><svg><use href="#i-burger"/></svg></button>
+  </div>
+  <nav class="mobile-nav" id="mobileNav" aria-label="Mobile">
+    <div class="wrap">
+      <ul>
+        <li><a href="#countries">Shop by country</a><div class="sub" id="mobileCountries"></div></li>
+        <li><a href="#bestsellers">Boxes</a></li>
+        <li><a href="#collections">Collections</a><div class="sub" id="mobileCollections"></div></li>
+        <li><a href="#subscribe">Subscribe &amp; save</a></li>
+        <li><a href="#gifting">Gifting</a></li>
+        <li><a href="#faq">Help &amp; FAQs</a></li>
+        <li><span class="mn-head">Location &amp; currency</span><div class="sub" id="mobileRegion"></div></li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="wrap hero-inner">
+      <div class="hero-copy">
+        <p class="eyebrow" id="heroEyebrow">European snack boxes · Delivered UK-wide</p>
+        <h1>Snacks from home, <em>wherever home is.</em></h1>
+        <p class="hero-sub" id="heroSub">Authentic treats from Poland, Germany, Italy, France, the Netherlands and beyond. Picked by locals, packed in Manchester or Germany and at your door in 2–4 days.</p>
+        <div class="hero-ctas">
+          <a class="btn btn-amber" href="#subscribe">Subscribe &amp; save</a>
+          <a class="btn btn-ghost" href="#bestsellers">Shop snack boxes</a>
+        </div>
+      </div>
+      <div class="hero-art" id="heroArt" aria-hidden="true"></div>
+    </div>
+  </section>
+
+  <section class="trust">
+    <div class="wrap trust-inner">
+      <div class="trust-item"><svg><use href="#i-shield"/></svg><span>Secure checkout</span></div>
+      <div class="trust-item"><svg><use href="#i-truck"/></svg><span id="trustDays">2–4 day tracked delivery</span></div>
+      <div class="trust-item"><svg><use href="#i-box"/></svg><span id="trustFree">Free delivery over £40</span></div>
+      <div class="trust-item"><svg><use href="#i-pin"/></svg><span>Picked by locals</span></div>
+    </div>
+  </section>
+
+  <section class="section" id="countries">
+    <div class="wrap">
+      <div class="section-head">
+        <div><p class="eyebrow">Shop by country</p><h2>Where is home?</h2><p>Every box is put together by someone who grew up eating what's inside.</p></div>
+        <a class="link-arrow" href="#bestsellers">Shop the boxes →</a>
+      </div>
+      <div class="country-grid" id="countryGrid"></div>
+    </div>
+  </section>
+
+  <section class="section" id="bestsellers" style="padding-top:0">
+    <div class="wrap">
+      <div class="section-head">
+        <div><p class="eyebrow">Our boxes</p><h2>Pick your box</h2></div>
+        <a class="link-arrow" href="#collections">Shop all boxes →</a>
+      </div>
+      <p class="results-note" id="resultsNote" hidden></p>
+      <div class="product-grid" id="productGrid"></div>
+    </div>
+  </section>
+
+  <section class="section" id="subscribe" style="padding-top:0">
+    <div class="wrap">
+      <div class="sub-band">
+        <div class="sub-art">
+          <div class="stamp">This month's box<strong id="stampCountry">Italy 🇮🇹</strong></div>
+          <div id="subArt"></div>
+        </div>
+        <div class="sub-copy">
+          <p class="eyebrow">Subscribe &amp; save</p>
+          <h2>A different country in every box</h2>
+          <p id="subCopy">12 to 29 snacks from a new European country each month, with a tasting card that tells the story behind every packet. Free UK delivery on every box. Pause, skip or cancel any time.</p>
+          <div class="plans" id="plans" role="radiogroup" aria-label="Subscription plan"></div>
+          <button class="btn btn-amber" type="button" id="startSub">Start my subscription</button>
+          <p class="fine">First box ships within 3 working days. Billed per box, no joining fee.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="gifting" style="padding-top:0">
+    <div class="wrap">
+      <div class="section-head">
+        <div><p class="eyebrow">Why people send them</p><h2>A taste of home, packed with care</h2><p>Whether you're sending comfort overseas, surprising a friend or stocking the snack table, one box does the job.</p></div>
+      </div>
+      <div class="values-grid" id="valuesGrid"></div>
+    </div>
+  </section>
+
+  <section class="section" id="collections" style="padding-top:0">
+    <div class="wrap">
+      <div class="section-head">
+        <div><p class="eyebrow">Collections</p><h2>Explore by craving</h2></div>
+        <a class="link-arrow" href="#bestsellers">See all boxes →</a>
+      </div>
+      <div class="collection-grid" id="collectionGrid"></div>
+    </div>
+  </section>
+
+
+
+  <section class="section" id="faq">
+    <div class="wrap faq-wrap">
+      <div class="section-head">
+        <div><p class="eyebrow">Help</p><h2>Good questions, quick answers</h2></div>
+      </div>
+      <div class="faq" id="faqList"></div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <a class="brand" href="#top"><svg viewBox="0 0 48 48" aria-hidden="true"><rect x="4" y="12" width="40" height="30" rx="7" fill="#F5A524"/><path d="M4 19a7 7 0 0 1 7-7h26a7 7 0 0 1 7 7v3H4z" fill="#D98A0B"/><path d="M24 12v30" stroke="#FFF7EA" stroke-width="4" opacity=".85"/><rect x="28" y="24" width="12" height="14" rx="1.5" fill="#fff"/><rect x="30" y="26" width="8" height="10" fill="#D8232A"/><circle cx="34" cy="31" r="2.2" fill="#fff"/></svg><span>Snacks of Europe<small>Snacks from home</small></span></a>
+        <p class="about" id="footAbout">We import the snacks Europe grew up on, straight from the supermarkets they come from. Packed by hand in Manchester or Germany.</p>
+        <div class="socials">
+          <a href="#top" aria-label="Instagram"><svg><use href="#i-ig"/></svg></a>
+          <a href="#top" aria-label="TikTok"><svg><use href="#i-tt"/></svg></a>
+          <a href="#top" aria-label="Facebook"><svg><use href="#i-fb"/></svg></a>
+          <a href="#top" aria-label="Pinterest"><svg><use href="#i-pt"/></svg></a>
+        </div>
+      </div>
+      <div>
+        <h4>Shop</h4>
+        <ul><li><a href="#countries">Shop by country</a></li><li><a href="#bestsellers">Boxes</a></li><li><a href="#collections">Collections</a></li><li><a href="#subscribe">Subscribe &amp; save</a></li><li><a href="#gifting">Gifting &amp; bulk orders</a></li></ul>
+      </div>
+      <div>
+        <h4>Help</h4>
+        <ul><li><a href="#faq" id="footDelivery">Delivery &amp; returns</a></li><li><a href="#faq">FAQs</a></li><li><a href="#faq">Contact us</a></li><li><a href="#faq">Track my order</a></li><li><a href="#faq">Privacy &amp; terms</a></li></ul>
+      </div>
+      <div>
+        <h4>Get the latest specials</h4>
+        <form class="newsletter" id="footerNews"><input type="email" required placeholder="Enter your email" aria-label="Email address"><button class="btn btn-amber btn-sm" type="submit">Sign up</button></form>
+        <p class="note">New boxes, restocks and subscriber-only offers. One email a week, no spam.</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year">2026</span> <span id="legal">Snacks of Europe</span></span>
+      <div class="region-switch" id="footerRegion" aria-label="Store region"></div>
+      <div class="payments" id="payments" aria-label="Accepted payment methods"><span>VISA</span><span>MASTERCARD</span><span>AMEX</span><span>APPLE PAY</span><span>GOOGLE PAY</span><span>PAYPAL</span><span>KLARNA</span></div>
+    </div>
+  </div>
+  <div class="airmail" aria-hidden="true"></div>
+</footer>
+
+<div class="scrim" id="scrim"></div>
+<aside class="drawer" id="drawer" aria-label="Your basket" aria-hidden="true">
+  <div class="drawer-head"><h3 id="drawerTitle">Your basket</h3><button class="close-x" type="button" id="drawerClose" aria-label="Close basket"><svg><use href="#i-x"/></svg></button></div>
+  <div class="ship-bar"><span id="shipMsg">Spend £40.00 more for free UK delivery</span><div class="track"><div class="fill" id="shipFill"></div></div></div>
+  <div class="drawer-items" id="drawerItems"></div>
+  <div class="drawer-foot">
+    <div class="subtotal"><span>Subtotal</span><b id="drawerSubtotal">£0.00</b></div>
+    <button class="btn btn-amber btn-block" type="button" id="checkoutBtn">Checkout</button>
+    <small id="drawerNote">Delivery and discount codes are applied at checkout.</small>
+  </div>
+</aside>
+
+<dialog id="qvDialog" aria-label="Product details">
+  <div class="qv">
+    <div class="qv-art" id="qvArt"></div>
+    <div class="qv-body">
+      <button class="close-x" type="button" data-close aria-label="Close"><svg><use href="#i-x"/></svg></button>
+      <p class="eyebrow" id="qvCountry"></p>
+      <h3 id="qvName"></h3>
+      <p class="desc" id="qvDesc"></p>
+      <p class="eyebrow" style="margin-top:.4rem">What's inside</p>
+      <ul id="qvInside"></ul>
+      <div class="price-row"><span class="price" id="qvPrice"></span><button class="btn btn-amber" type="button" id="qvAdd">Add to basket</button></div>
+    </div>
+  </div>
+</dialog>
+
+<dialog id="offerDialog" aria-label="Welcome offer">
+  <div class="offer">
+    <div class="offer-badge">10%<small>OFF</small></div>
+    <h3>Your first box, 10% off</h3>
+    <p>Pop your email in and we'll send a code for your first order.</p>
+    <form id="offerForm"><input type="email" required placeholder="Email address" aria-label="Email address"><button class="btn btn-ink btn-block" type="submit">Send me a code</button></form>
+    <div class="code" id="offerCode" hidden>Your code is<b>WELCOME10</b><button class="btn btn-amber btn-sm" type="button" id="copyCode">Copy code</button></div>
+    <button class="nothanks" type="button" data-close>No thanks</button>
+  </div>
+</dialog>
+
+<button class="offer-tab" type="button" id="offerTab">🎁 Get 10% off</button>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script>
+(function(){
+'use strict';
+const $=(s,r=document)=>r.querySelector(s);
+const $$=(s,r=document)=>Array.from(r.querySelectorAll(s));
+const FONT="'Bricolage Grotesque','Arial Black',Impact,sans-serif";
+const esc=s=>String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+const gbp=n=>'£'+n.toFixed(2);
+const r1=n=>Math.round(n*10)/10;
+function shade(hex,p){
+  const n=parseInt(hex.slice(1),16);let r=n>>16,g=(n>>8)&255,b=n&255;
+  const t=p<0?0:255,a=Math.abs(p);
+  r=Math.round(r+(t-r)*a);g=Math.round(g+(t-g)*a);b=Math.round(b+(t-b)*a);
+  return '#'+((1<<24)+(r<<16)+(g<<8)+b).toString(16).slice(1);
+}
+
+/* ---------- illustration generators ---------- */
+function packet(o){
+  const shape=o.shape||'bag';
+  const w=o.w||110;
+  const f=o.fill||'#E63946',d=o.dark||shade(f,-.32),a=o.accent||'#FFD166';
+  const label=esc(o.label||''),sub=esc(o.sub||'');
+  const long=(o.label||'').length>5;
+  let h,g='';
+  if(shape==='bag'){
+    h=o.h||Math.round(w*1.36);
+    const fs=Math.round(w*.17),fs2=Math.round(w*.082),rx=Math.round(w*.12),c=r1(w/2);
+    const tl=long?` textLength="${r1(w*.62)}" lengthAdjust="spacingAndGlyphs"`:'';
+    g=`<rect x="6" y="0" width="${w-12}" height="12" rx="3" fill="${d}"/>
+<path d="M10 6H${w-10}" stroke="${f}" stroke-width="3" stroke-dasharray="2 3" opacity=".75"/>
+<rect x="0" y="10" width="${w}" height="${h-20}" rx="${rx}" fill="${f}"/>
+<rect x="${r1(w*.07)}" y="${r1(h*.12)}" width="${r1(w*.12)}" height="${r1(h*.6)}" rx="${r1(w*.06)}" fill="#fff" opacity=".14"/>
+<ellipse cx="${c}" cy="${r1(h*.42)}" rx="${r1(w*.37)}" ry="${r1(h*.15)}" fill="#fff"/>
+<text x="${c}" y="${r1(h*.42)}" text-anchor="middle" dominant-baseline="central" font-family="${FONT}" font-weight="800" font-size="${fs}" fill="${d}"${tl}>${label}</text>
+<text x="${c}" y="${r1(h*.66)}" text-anchor="middle" font-family="${FONT}" font-weight="700" font-size="${fs2}" fill="#fff" letter-spacing="1.2">${sub}</text>
+<circle cx="${c}" cy="${r1(h*.8)}" r="${r1(w*.1)}" fill="${a}"/>
+<circle cx="${r1(w/2-w*.03)}" cy="${r1(h*.8-w*.03)}" r="${r1(w*.03)}" fill="#fff" opacity=".65"/>
+<rect x="6" y="${h-12}" width="${w-12}" height="12" rx="3" fill="${d}"/>
+<path d="M10 ${h-6}H${w-10}" stroke="${f}" stroke-width="3" stroke-dasharray="2 3" opacity=".75"/>`;
+  }else if(shape==='bar'){
+    h=o.h||Math.round(w*.4);
+    const fs=Math.round(h*.4),fx=r1(w*.2),fw=r1(w*.07);
+    const tl=long?` textLength="${r1(w*.5)}" lengthAdjust="spacingAndGlyphs"`:'';
+    g=`<rect x="0" y="0" width="${w}" height="${h}" rx="8" fill="${f}"/>
+<path d="M0 8a8 8 0 0 1 8-8h${r1(fx-8)}v${h}H8a8 8 0 0 1-8-8z" fill="${d}"/>
+<path d="M${fx} 0l${fw} ${h/2}l-${fw} ${h/2}z" fill="${d}"/>
+<rect x="${r1(w*.06)}" y="${r1(h*.25)}" width="${r1(w*.08)}" height="${r1(h*.5)}" rx="3" fill="${a}"/>
+<text x="${r1(w*.63)}" y="${h/2}" text-anchor="middle" dominant-baseline="central" font-family="${FONT}" font-weight="800" font-size="${fs}" fill="#fff"${tl}>${label}</text>
+<text x="${r1(w*.63)}" y="${r1(h*.86)}" text-anchor="middle" font-family="${FONT}" font-weight="700" font-size="${Math.round(h*.15)}" fill="${a}" letter-spacing="1.5">${sub}</text>`;
+  }else if(shape==='tin'){
+    h=o.h||Math.round(w*1.3);
+    const fs=Math.round(w*.16),fs2=Math.round(w*.08);
+    const tl=long?` textLength="${r1(w*.8)}" lengthAdjust="spacingAndGlyphs"`:'';
+    g=`<rect x="0" y="10" width="${w}" height="${h-10}" rx="12" fill="${f}"/>
+<rect x="${r1(w*.08)}" y="18" width="${r1(w*.1)}" height="${h-30}" rx="5" fill="#fff" opacity=".14"/>
+<ellipse cx="${w/2}" cy="10" rx="${w/2}" ry="9" fill="${d}"/>
+<ellipse cx="${w/2}" cy="9" rx="${w/2-6}" ry="6" fill="${shade(d,.18)}"/>
+<rect x="0" y="${r1(h*.4)}" width="${w}" height="${r1(h*.3)}" fill="#fff" opacity=".96"/>
+<text x="${w/2}" y="${r1(h*.55)}" text-anchor="middle" dominant-baseline="central" font-family="${FONT}" font-weight="800" font-size="${fs}" fill="${d}"${tl}>${label}</text>
+<text x="${w/2}" y="${r1(h*.85)}" text-anchor="middle" font-family="${FONT}" font-weight="700" font-size="${fs2}" fill="#fff" letter-spacing="1.2">${sub}</text>`;
+  }else if(shape==='jar'){
+    h=o.h||Math.round(w*1.3);
+    const fs=Math.round(w*.15),fs2=Math.round(w*.08),lx=r1(w*.15),lw=r1(w*.7);
+    const tl=long?` textLength="${r1(w*.72)}" lengthAdjust="spacingAndGlyphs"`:'';
+    g=`<rect x="${lx}" y="0" width="${lw}" height="20" rx="5" fill="${d}"/>
+<rect x="${r1(w*.2)}" y="3" width="${r1(w*.6)}" height="3" rx="1.5" fill="#fff" opacity=".3"/>
+<path d="M${lx} 18h${lw}q${lx} 10 ${lx} 26v${h-64}a20 20 0 0 1-20 20h-${w-40}a20 20 0 0 1-20-20V44q0-16 ${lx}-26z" fill="${f}"/>
+<rect x="10" y="48" width="9" height="${h-76}" rx="4.5" fill="#fff" opacity=".22"/>
+<rect x="8" y="${r1(h*.44)}" width="${w-16}" height="${r1(h*.3)}" rx="6" fill="#fff" opacity=".96"/>
+<text x="${w/2}" y="${r1(h*.59)}" text-anchor="middle" dominant-baseline="central" font-family="${FONT}" font-weight="800" font-size="${fs}" fill="${d}"${tl}>${label}</text>
+<text x="${w/2}" y="${r1(h*.36)}" text-anchor="middle" font-family="${FONT}" font-weight="700" font-size="${fs2}" fill="#fff" letter-spacing="1.2">${sub}</text>`;
+  }
+  return `<svg viewBox="0 0 ${w} ${h}" width="${w}" height="${h}" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">${g}</svg>`;
+}
+function placed(spec,cx,cy,rot,w){
+  const h=spec.shape==='bar'?Math.round(w*.4):Math.round(w*(spec.shape==='bag'?1.36:1.3));
+  return `<g transform="translate(${cx} ${cy}) rotate(${rot}) translate(${-w/2} ${-h/2})">${packet(Object.assign({},spec,{w}))}</g>`;
+}
+function boxArt(p){
+  const c=p.color,cd=shade(c,-.3),cl=shade(c,.14),pk=p.packets;
+  return `<svg viewBox="0 0 320 240" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+<ellipse cx="160" cy="224" rx="132" ry="11" fill="${cd}" opacity=".22"/>
+<path d="M58 98h204l-6 60H64z" fill="${cd}"/>
+${placed(pk[0],98,94,-14,84)}${placed(pk[1],160,78,0,94)}${placed(pk[2],222,94,14,84)}
+<path d="M46 128h228l-12 92H58z" fill="${c}"/>
+<path d="M46 128l-24-14 8 90 28 16z" fill="${cl}"/>
+<path d="M274 128l24-14-8 90-28 16z" fill="${cl}"/>
+<text x="160" y="176" text-anchor="middle" font-family="${FONT}" font-weight="800" font-size="16" fill="#fff" letter-spacing="1">SNACKS OF EUROPE</text>
+<text x="160" y="194" text-anchor="middle" font-family="${FONT}" font-weight="700" font-size="9.5" fill="#fff" opacity=".85" letter-spacing="3">${esc((p.country||'').toUpperCase())} EDITION</text>
+<g transform="translate(232 134) rotate(8)"><rect width="34" height="26" rx="2" fill="#fff"/><rect x="3" y="3" width="28" height="20" fill="#D8232A"/><circle cx="17" cy="13" r="5" fill="#fff"/><circle cx="24" cy="6" r="9" fill="none" stroke="#fff" stroke-width="1.2" opacity=".7"/></g>
+</svg>`;
+}
+function giftArt(c){
+  const l=shade(c,.16);
+  return `<svg viewBox="0 0 140 120" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+<ellipse cx="70" cy="114" rx="58" ry="5" fill="${shade(c,-.3)}" opacity=".2"/>
+<rect x="16" y="50" width="108" height="62" rx="8" fill="${c}"/>
+<rect x="8" y="36" width="124" height="24" rx="6" fill="${l}"/>
+<rect x="60" y="36" width="20" height="76" fill="#FFD166"/>
+<rect x="8" y="44" width="124" height="9" fill="#FFD166"/>
+<path d="M70 36c-8-16-30-22-32-8-2 12 18 12 32 8z" fill="#F5A524"/>
+<path d="M70 36c8-16 30-22 32-8 2 12-18 12-32 8z" fill="#F5A524"/>
+<circle cx="70" cy="36" r="6" fill="#D8232A"/>
+</svg>`;
+}
+function confettiSVG(){
+  let s=0x2F6E2B1,parts='';
+  const rnd=()=>{s^=s<<13;s^=s>>>17;s^=s<<5;return ((s>>>0)%1000)/1000};
+  for(let i=0;i<18;i++){
+    const x=r1(rnd()*100),y=r1(rnd()*100),k=rnd(),sz=r1(1.2+rnd()*1.8),rot=Math.round(rnd()*360);
+    if(k<.45)parts+=`<polygon points="0,${sz} ${r1(sz/2)},0 ${sz},${sz}" transform="translate(${x} ${y}) rotate(${rot})" fill="#fff" opacity=".22"/>`;
+    else if(k<.8)parts+=`<circle cx="${x}" cy="${y}" r="${r1(sz/3)}" fill="#FFE7B8" opacity=".35"/>`;
+    else parts+=`<rect x="${x}" y="${y}" width="${sz}" height="${r1(sz/3)}" rx=".3" transform="rotate(${rot} ${x} ${y})" fill="#fff" opacity=".18"/>`;
+  }
+  return `<svg class="confetti" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">${parts}</svg>`;
+}
+
+/* ---------- regions ---------- */
+const REGIONS={
+  UK:{code:'UK',flag:'🇬🇧',short:'UK',name:'United Kingdom · GBP £',cur:'£',curName:'GBP',lang:'en-GB',free:40,
+    announce:'Free UK delivery on orders over <strong>£40</strong> &nbsp;·&nbsp; Ships in 2–4 working days',
+    eyebrow:'European snack boxes · Delivered UK-wide',
+    heroSub:'Authentic treats from Poland, Germany, Italy, France, the Netherlands and beyond. Picked by locals, packed in Manchester or Germany and at your door in 2–4 days.',
+    trustDays:'2–4 day tracked delivery',trustFree:'Free delivery over £40',
+    subCopy:'12 to 29 snacks from a new European country each month, with a tasting card that tells the story behind every packet. Free UK delivery on every box. Pause, skip or cancel any time.',
+    statDays:'2–4 days',shipEmpty:'Free UK delivery on orders over £40',shipMore:'Spend {n} more for free UK delivery',shipDone:'You’ve unlocked free UK delivery',
+    legal:'Snacks of Europe',payments:['VISA','MASTERCARD','AMEX','APPLE PAY','GOOGLE PAY','PAYPAL','KLARNA'],
+    footerAbout:'We import the snacks Europe grew up on, straight from the supermarkets they come from. Packed by hand in Manchester or Germany.',
+    about:'An independent UK importer of European snacks. We buy direct from supermarkets and wholesalers across Europe and pack every box by hand in Manchester or Germany.',
+    faqDelivery:'Delivery is free on orders over £40 and £3.95 below that. Boxes go out with Royal Mail Tracked 48 and arrive in 2–4 working days. Order before 1pm and it leaves the same day.',
+    faqAbroadQ:'Do you ship outside the UK?',faqAbroadA:'We ship to Ireland and mainland Europe. Delivery is calculated at checkout and usually takes 3–7 working days.',
+    labelRules:'UK allergen rules',bulkContact:'Email hello@snacksofeurope.co.uk with the quantity and delivery date.'},
+  US:{code:'US',flag:'🇺🇸',short:'US',name:'United States · USD $',cur:'$',curName:'USD',lang:'en-US',free:49,
+    announce:'Free US shipping on orders over <strong>$49</strong> &nbsp;·&nbsp; Delivered in 7–10 business days',
+    eyebrow:'European snack boxes · Delivered across the US',
+    heroSub:'Authentic treats from Poland, Germany, Italy, France, the UK and beyond. Picked by locals, packed in Manchester or Germany and at your door in 7–10 days.',
+    trustDays:'7–10 day tracked shipping',trustFree:'Free shipping over $49',
+    subCopy:'12 to 29 snacks from a new European country each month, with a tasting card that tells the story behind every packet. Free US shipping on every box. Pause, skip or cancel any time.',
+    statDays:'2–5 days',shipEmpty:'Free US shipping on orders over $49',shipMore:'Spend {n} more for free US shipping',shipDone:'You’ve unlocked free US shipping',
+    legal:'Snacks of Europe',payments:['VISA','MASTERCARD','AMEX','DISCOVER','APPLE PAY','GOOGLE PAY','PAYPAL','AFFIRM'],
+    footerAbout:'We import the snacks Europe grew up on, straight from the supermarkets they come from. Packed by hand in Manchester or Germany.',
+    about:'An independent UK importer of European snacks. We buy direct from supermarkets and wholesalers across Europe and pack every box by hand in Manchester or Germany.',
+    faqDelivery:'Shipping is free on orders over $49 and $6.95 below that. Boxes ship from the UK or Germany by tracked courier and arrive in 7–10 business days.',
+    faqAbroadQ:'Do you ship outside the US?',faqAbroadA:'We ship to Canada. Shipping is calculated at checkout and usually takes 4–8 business days.',
+    labelRules:'US labeling rules',bulkContact:'Email hello@snacksofeurope.com with the quantity and delivery date.'}
+};
+const RKEY='snacks-of-europe-region';
+let region='UK';
+const R=()=>REGIONS[region];
+const rn=v=>(v&&typeof v==='object')?v[region]:v;
+const US_WORDS=[[/\bcrisps\b/g,'chips'],[/\bCrisps\b/g,'Chips'],[/\bbiscuits\b/g,'cookies'],[/\bBiscuits\b/g,'Cookies'],[/\bbiscuit\b/g,'cookie'],[/\bBiscuit\b/g,'Cookie'],[/\bsweets\b/g,'candy'],[/\bSweets\b/g,'Candy'],[/\bflavoured\b/g,'flavored'],[/\bfavourite/g,'favorite'],[/\bcustomise\b/g,'customize'],[/\brelabelled\b/g,'relabeled'],[/\bsavoury\b/g,'savory'],[/\bbasket\b/g,'cart'],[/\bBasket\b/g,'Cart'],[/\bworking days\b/g,'business days'],[/\bdelivery\b/g,'shipping'],[/\bDelivery\b/g,'Shipping'],[/\bat uni\b/g,'at college'],[/\bcolour/g,'color']];
+const L=s=>region==='US'?US_WORDS.reduce((x,[re,to])=>x.replace(re,to),String(s)):String(s);
+const money=n=>R().cur+n.toFixed(2);
+const priceOf=o=>rn(o.price);
+
+/* ---------- data ---------- */
+const HERO=[
+  {img:'images/hero/hero-haribo.webp',x:'2%',y:'8%',r:-18,h:200,d:0},
+  {img:'images/hero/hero-gletschereis.webp',x:'26%',y:'-3%',r:8,h:190,d:.08},
+  {img:'images/hero/hero-pandistelle.webp',x:'50%',y:'3%',r:22,h:225,d:.16},
+  {img:'images/hero/hero-katja.webp',x:'76%',y:'-2%',r:-10,h:200,d:.24},
+  {img:'images/hero/hero-duyvis.webp',x:'-3%',y:'47%',r:12,h:190,d:.32,lg:true},
+  {img:'images/hero/hero-baiocchi.webp',x:'21%',y:'42%',r:-8,h:170,d:.4},
+  {img:'images/hero/hero-cotedor.webp',x:'53%',y:'45%',r:14,h:225,d:.48},
+  {img:'images/hero/hero-nimm2.webp',x:'72%',y:'44%',r:-20,h:190,d:.56,lg:true},
+  {img:'images/hero/hero-ringo.webp',x:'14%',y:'60%',r:38,h:210,d:.6,lg:true},
+  {img:'images/hero/hero-tuc.webp',x:'4%',y:'82%',r:-6,h:95,d:.64,lg:true},
+  {img:'images/hero/hero-venco.webp',x:'36%',y:'84%',r:6,h:200,d:.72,lg:true},
+  {img:'images/hero/hero-hanuta.webp',x:'64%',y:'82%',r:-14,h:170,d:.8,lg:true},
+  {img:'images/hero/hero-maoam.webp',x:'88%',y:'26%',r:16,h:180,d:.84,lg:true},
+  {img:'images/hero/hero-lu.webp',x:'56%',y:'29%',r:-32,h:95,d:.88}
+];
+const COUNTRIES=[
+  {name:'Germany',flag:'🇩🇪',snacks:22,from:{UK:32.99,US:37.99},regions:['UK','US'],color:'#F4B400',image:'images/country-de.webp'},
+  {name:'Italy',flag:'🇮🇹',snacks:21,from:{UK:34.99,US:39.99},regions:['UK','US'],color:'#1F8A5B',image:'images/country-it.webp'},
+  {name:'Netherlands',flag:'🇳🇱',snacks:16,from:{UK:29.99,US:34.99},regions:['UK','US'],color:'#F28C28',image:'images/country-nl.webp'},
+  {name:'Belgium',flag:'🇧🇪',snacks:14,from:{UK:29.99,US:34.99},regions:['UK','US'],color:'#5D3A1A',image:'images/country-be.webp'},
+  {name:'Poland',flag:'🇵🇱',snacks:19,from:{UK:34.99,US:39.99},regions:['UK','US'],color:'#D8232A',image:'images/country-pl.webp'},
+  {name:'France',flag:'🇫🇷',snacks:18,from:{UK:34.99,US:39.99},regions:['UK','US'],color:'#2B4FA8',image:'images/country-fr.webp'},
+  {name:'Spain',flag:'🇪🇸',snacks:17,from:{UK:32.99,US:37.99},regions:['UK','US'],color:'#E63946',image:'images/country-es.webp'},
+  {name:'Sweden',flag:'🇸🇪',snacks:15,from:{UK:32.99,US:37.99},regions:['UK'],color:'#2E86DE',image:'images/country-se.webp'},
+  {name:'United Kingdom',flag:'🇬🇧',snacks:34,from:{UK:24.99,US:34.99},regions:['US'],color:'#2D3E8F',image:'images/country-uk.webp'}
+];
+const PRODUCTS=[
+  {id:'eu-22',name:'European Snack Box · 22 pieces',country:'Europe',flag:'🇪🇺',price:{UK:47.99,US:54.99},regions:['UK','US'],color:'#2B4FA8',image:'images/eu-22.webp',tags:'europe mixed germany german dutch netherlands italy italian belgium belgian haribo maoam cote d\'or lu baiocchi venco chocolate',
+   desc:'A grand tour in a box. Belgian Côte d’Or and LU Bastogne, German Haribo and Maoam, Italian Baiocchi and Dutch drop, with a tasting card for every stop.',
+   inside:['Côte d’Or milk chocolate (Belgium)','LU Bastogne biscuits (Belgium)','Haribo Quaxi frog gums (Germany)','Mulino Bianco Baiocchi (Italy)','Maoam Pinballs (Germany)','Venco Droptoefjes liquorice (Netherlands)','Knoppers wafer bars (Germany)'],
+   packets:[{fill:'#00A6A6',label:'WAFER',sub:'HAZELNUT',accent:'#FFD166'},{fill:'#2D3E8F',label:'COOKIE',sub:'SANDWICH',accent:'#FF6B9A'},{fill:'#8B5A2B',label:'TOFFEE',sub:'SEA SALT',accent:'#F4B400'}]},
+  {id:'pl-15',name:'Polish Snack Box · 15 pieces',country:'Poland',flag:'🇵🇱',price:{UK:39.99,US:46.99},regions:['UK','US'],color:'#D8232A',image:'images/pl-15.webp',tags:'poland polish prince polo wedel ptasie mleczko lajkonik paluszki sliwka wafers fudge krowki halva chocolate',
+   desc:'Prince Polo wafers, Wedel Ptasie Mleczko, Lajkonik paluszki and plums in chocolate. Everything a Polish grandmother keeps in the good cupboard.',
+   inside:['Prince Polo XXL chocolate wafer','E. Wedel Ptasie Mleczko marshmallows','Lajkonik paluszki salted sticks','Śliwka Nałęczowska plums in chocolate','Krówki milk fudge','Sunflower halva','Sesame snaps'],
+   packets:[{fill:'#D8232A',label:'WAFER',sub:'CHOCOLATE',accent:'#FFF3C4'},{fill:'#F4B400',dark:'#B57F00',label:'KROWKI',sub:'FUDGE',accent:'#8B5A2B'},{fill:'#8E44AD',label:'PLUM',sub:'CHOCS',accent:'#F6C1E7'}]},
+  {id:'de-20',name:'German Snack Box · 20 snacks',country:'Germany',flag:'🇩🇪',price:{UK:42.99,US:49.99},regions:['UK','US'],color:'#F4B400',image:'images/de-20.webp',tags:'germany german haribo nimm2 sarotti hanuta knoppers lorenz gummy bears chocolate wafers sweets',
+   desc:'Haribo frogs, nimm2 gummies, Sarotti cat-tongue chocolate and Hanuta wafers. The German supermarket sweet aisle, posted to your door.',
+   inside:['Haribo Quaxi frog gums','nimm2 Lachgummi Shakies','Sarotti Katzenzungen chocolate','Gletschereis ice-cool sweets','Hanuta Minis hazelnut wafers','Knoppers hazelnut wafer bar','Lorenz Nic Nac’s BBQ peanuts'],
+   packets:[{fill:'#F4B400',dark:'#B57F00',label:'GUMMI',sub:'BEARS',accent:'#E63946'},{fill:'#E63946',label:'CRISPS',sub:'PAPRIKA',accent:'#FFF3C4'},{fill:'#8B5A2B',label:'WAFER',sub:'HAZELNUT',accent:'#F4B400'}]},
+  {id:'nl-18',name:'Dutch Treats Box · 18 pieces',country:'Netherlands',flag:'🇳🇱',price:{UK:39.99,US:46.99},regions:['UK','US'],color:'#F28C28',image:'images/nl-18.webp',tags:'netherlands dutch holland venco katja duyvis de ruijter frisia king liquorice drop hagelslag sweets',
+   desc:'Venco drop for the liquorice loyalists, Katja fruit gums for everyone else, Duyvis cocktail nuts and De Ruijter hagelslag for your toast.',
+   inside:['Venco Droptoefjes soft liquorice','Venco NL Drop','Katja Biggetjes fruit gums','Duyvis Borrelnootjes cocktail nuts','De Ruijter chocolate hagelslag','Frisia Zure Ufo’s sour sherbet flyers','King Extra Strong peppermints'],
+   packets:[{fill:'#F28C28',label:'STROOP',sub:'WAFELS',accent:'#FFD166'},{fill:'#2D1B0E',dark:'#120A05',label:'DROP',sub:'SALTY',accent:'#F4B400'},{fill:'#2E86DE',label:'SPECULAAS',sub:'SPICED',accent:'#FFF3C4'}]},
+  {id:'be-16',name:'Belgian Favourites Box · 16 pieces',country:'Belgium',flag:'🇧🇪',price:{UK:44.99,US:52.99},regions:['UK','US'],badge:'New',color:'#5D3A1A',image:'images/be-16.webp',tags:'belgium belgian cote d\'or lu bastogne tuc frisia chocolate biscuits crackers sweets',
+   desc:'Côte d’Or milk chocolate, LU Bastogne cinnamon biscuits, TUC crackers and a jar of Frisia sour UFOs. The Belgian corner shop, minus the Eurostar.',
+   inside:['Côte d’Or milk chocolate bar','LU Bastogne cinnamon biscuits','TUC Naturel crackers','Frisia Zure Ufo’s sour sherbet flyers','Côte d’Or Mignonnette minis','Belgian speculoos biscuits','Belgian waffle bites'],
+   packets:[{fill:'#D8232A',label:'CHOC',sub:'LAIT MELK',accent:'#F4B400'},{fill:'#2B4FA8',label:'BASTOGNE',sub:'BISCUITS',accent:'#FFD166'},{fill:'#F4B400',dark:'#B57F00',label:'TUC',sub:'CRACKERS',accent:'#E63946'}]},
+  {id:'it-16',name:'Italian Aperitivo Box · 16 pieces',country:'Italy',flag:'🇮🇹',price:{UK:44.99,US:52.99},regions:['UK','US'],badge:'New',color:'#1F8A5B',image:'images/it-16.webp',tags:'italy italian mulino bianco baiocchi ringo pan di stelle balconi sperlari fonzies biscuits sweets',
+   desc:'Baiocchi, Ringo and Pan di Stelle for the coffee, Balconi rolls for the school bag and Sperlari jellies for the drawer you keep secret.',
+   inside:['Mulino Bianco Baiocchi pistachio biscuits','Ringo vanilla sandwich biscuits','Pan di Stelle merenda cakes','Balconi Rollino latte roll cakes','Sperlari Gelée fruit jellies','Mulino Bianco Canestrini','Fonzies corn snacks'],
+   packets:[{fill:'#1F8A5B',label:'TARALLI',sub:'OLIVE OIL',accent:'#FFD166'},{fill:'#D8232A',label:'AMARETTI',sub:'SOFT',accent:'#FFF3C4'},{fill:'#F4B400',dark:'#B57F00',label:'GRISSINI',sub:'SESAME',accent:'#1F8A5B'}]},
+  {id:'fr-15',name:'French Pâtisserie Box · 15 pieces',country:'France',flag:'🇫🇷',price:{UK:44.99,US:52.99},regions:['UK','US'],color:'#2B4FA8',image:'images/fr-15.webp',tags:'france french st michel gavottes bonne maman lu palmito carambar galettes madeleines caramel crepes palmiers biscuits',
+   desc:'St Michel madeleines, Gavottes lace crêpes, Bonne Maman galettes and a bag of Carambar. A boulangerie counter, minus the queue.',
+   inside:['St Michel shell madeleines','Gavottes crêpes dentelle','Bonne Maman butter galettes','LU Palmito palmiers','Carambar caramels','Fruit jelly pâtes','Montélimar nougat'],
+   packets:[{fill:'#2B4FA8',label:'GALETTES',sub:'BRETONNES',accent:'#FFD166'},{fill:'#FF6B9A',label:'MADELEINE',sub:'BUTTER',accent:'#FFF3C4'},{fill:'#8B5A2B',label:'CARAMEL',sub:'SALTED',accent:'#F4B400'}]},
+  {id:'es-16',name:'Spanish Tapas Box · 16 pieces',country:'Spain',flag:'🇪🇸',price:{UK:41.99,US:48.99},regions:['UK','US'],color:'#E63946',image:'images/es-16.webp',tags:'spain spanish torres el almendro conguitos polvorones kikos turron almonds crisps membrillo',
+   desc:'Torres truffle crisps, El Almendro turrón, Conguitos and polvorones. Tapas-hour snacks for a rainy evening.',
+   inside:['Torres black truffle crisps','El Almendro turrón selection','Conguitos chocolate peanuts','El Artesano polvorones','Kikos fried corn','Salted marcona almonds','Quince membrillo'],
+   packets:[{fill:'#E63946',label:'TURRON',sub:'ALMOND',accent:'#FFF3C4'},{fill:'#F4B400',dark:'#B57F00',label:'CRISPS',sub:'OLIVE OIL',accent:'#E63946'},{fill:'#8E44AD',label:'CHURROS',sub:'CHOC DIPPED',accent:'#F6C1E7'}]},
+  {id:'se-18',name:'Swedish Fika Box · 18 pieces',country:'Sweden',flag:'🇸🇪',price:{UK:42.99,US:49.99},regions:['UK'],color:'#2E86DE',image:'images/se-18.webp',tags:'sweden swedish nordic scandinavian fika annas daim wasa kexchoklad dumle crispbread liquorice ginger thins lingonberry',
+   desc:'Annas ginger thins, Wasa crispbread, Daim and Kexchoklad, with Dumle toffees for the drawer. Put the kettle on.',
+   inside:['Annas ginger thins','Daim almond-caramel minis','Wasa Husman rye crispbread','Cloetta Kexchoklad wafers','Fazer Dumle soft toffees','Salty liquorice','Lingonberry sweets'],
+   packets:[{fill:'#2E86DE',label:'KNACKE',sub:'CRISPBREAD',accent:'#FFD166'},{fill:'#2D1B0E',dark:'#120A05',label:'LAKRITS',sub:'SALT',accent:'#F4B400'},{fill:'#F4B400',dark:'#B57F00',label:'PEPPAR',sub:'KAKOR',accent:'#E63946'}]},
+  {id:'uk-classic',name:'British Classics Box · 20 snacks',country:'United Kingdom',flag:'🇬🇧',price:{UK:34.99,US:44.99},regions:['US'],color:'#2D3E8F',image:'images/uk-classic.webp',tags:'united kingdom british britain uk england english cadbury walkers mcvities maynards bassetts chocolate crisps biscuits tea',
+   desc:'Cadbury Buttons, Walkers crisps, McVitie’s Digestives and the wine gums that get argued over on every road trip. The corner-shop haul, posted to you.',
+   inside:['Cadbury Dairy Milk Buttons','Walkers salt & vinegar crisps','McVitie’s Digestives','Maynards Bassetts wine gums','Walkers shortbread fingers','Prawn cocktail crisps','Breakfast tea bags'],
+   packets:[{fill:'#2D3E8F',label:'CRISPS',sub:'SALT & VINEGAR',accent:'#FFD166'},{fill:'#D8232A',label:'CHOC',sub:'BUTTONS',accent:'#FFF3C4'},{shape:'tin',fill:'#1F8A5B',label:'TEA',sub:'BREAKFAST',accent:'#FFD166'}]}
+];
+const SUB_ART={color:'#F5A524',country:'Italy',image:'images/sub-italy.webp',packets:[{fill:'#1F8A5B',label:'TARALLI',sub:'OLIVE OIL',accent:'#FFD166'},{fill:'#D8232A',label:'AMARETTI',sub:'SOFT',accent:'#FFF3C4'},{fill:'#F4B400',dark:'#B57F00',label:'GRISSINI',sub:'SESAME',accent:'#1F8A5B'}]};
+const PLANS=[
+  {id:'monthly',name:'Monthly',meta:'Rolling. Cancel any time.',price:{UK:34.99,US:39.99}},
+  {id:'3m',name:'3-month plan',meta:'One country a month for a season',price:{UK:32.99,US:37.99}},
+  {id:'6m',name:'6-month plan',meta:'Half a year of snacks.',price:{UK:29.99,US:34.99}}
+];
+const VALUES=[
+  {title:'Made for parties & snack tables',text:'Birthdays, BBQs, movie nights and office Fridays get better with a box of crowd-pleasers. Easy to share, fun to unpack, guaranteed to start a conversation.',color:'#F28C28',art:()=>packet({w:96,fill:'#F28C28',label:'CRISPS',sub:'PAPRIKA',accent:'#3A86FF'})},
+  {title:'Packed with the snacks people miss',text:'From Polish wafers to Spanish olive-oil crisps, every box is full of the treats people grew up with, miss, or have always wanted to try.',color:'#5D3A1A',art:()=>packet({w:150,shape:'bar',fill:'#5D3A1A',accent:'#F5A524',label:'CHOC',sub:'HAZELNUT'})},
+  {title:'The gift that feels personal',text:'Care packages, homesick students, expat birthdays and Christmas from afar. Add a handwritten note at checkout and we will tuck it in on top.',color:'#D8232A',art:()=>giftArt('#D8232A')}
+];
+const COLLECTIONS=[
+  {name:'Chocolates',count:64,color:'#5D3A1A',q:'chocolate',image:'images/coll-chocolates.webp',art:()=>packet({w:120,shape:'bar',fill:'#5D3A1A',accent:'#F5A524',label:'CHOC',sub:'MILK'})},
+  {name:{UK:'Biscuits & cookies',US:'Cookies & biscuits'},count:48,color:'#8B5A2B',q:{UK:'biscuits',US:'cookies'},image:'images/coll-biscuits.webp',art:()=>packet({w:66,fill:'#8B5A2B',label:'COOKIE',sub:'SANDWICH',accent:'#F4B400'})},
+  {name:{UK:'Sweets & candy',US:'Candy & sweets'},count:72,color:'#8E44AD',q:{UK:'sweets',US:'candy'},image:'images/coll-sweets.webp',art:()=>packet({w:66,fill:'#8E44AD',label:'JELLY',sub:'BEARS',accent:'#F6C1E7'})},
+  {name:{UK:'Crisps & savoury',US:'Chips & savory'},count:39,color:'#E63946',q:{UK:'crisps',US:'chips'},image:'images/coll-crisps.webp',art:()=>packet({w:66,fill:'#E63946',label:'CRISPS',sub:'SALTED',accent:'#FFF3C4'})},
+  {name:'Tea & coffee',count:21,color:'#1F8A5B',q:'tea',image:'images/coll-tea.webp',art:()=>packet({w:66,shape:'tin',fill:'#1F8A5B',label:'TEA',sub:'LOOSE LEAF',accent:'#FFD166'})},
+  {name:'Pantry & spreads',count:33,color:'#F28C28',q:'hazelnut',image:'images/coll-pantry.webp',art:()=>packet({w:66,shape:'jar',fill:'#8B5A2B',label:'HAZELNUT',sub:'SPREAD',accent:'#FFD166'})}
+];
+
+const faqItems=()=>[
+  {q:'Who is Snacks of Europe?',a:R().about},
+  {q:'How much is delivery and how fast is it?',a:R().faqDelivery},
+  {q:'Can I return my order?',a:'Snacks are perishable so we cannot take them back, but every box is covered by our happiness guarantee. If anything arrives damaged, out of date or missing, tell us within 30 days and we will replace it or refund it.'},
+  {q:'Can I get a bulk or corporate discount?',a:'Yes. '+R().bulkContact+' We will quote for the quantity, and can add a branded note card.'},
+  {q:'Can I customise my box?',a:'Every box comes with a set line-up so we can keep prices down, but you can swap out anything you are allergic to at checkout. Build-a-box, where you pick every packet, is on the way.'},
+  {q:'Where are the products sourced from?',a:'From the country on the box. Nothing is a locally made lookalike. Every product is relabelled to meet '+R().labelRules+', so you get the real thing and the right information.'},
+  {q:R().faqAbroadQ,a:R().faqAbroadA}
+];
+
+/* ---------- rendering ---------- */
+const stars=n=>'★'.repeat(Math.round(n));
+const art=p=>p.image?`<img src="${p.image}" alt="" loading="lazy" width="1200" height="900">`:boxArt(p);
+const tint=c=>shade(c,.86);
+let currentFilter='';
+
+function renderHero(){
+  $('#heroArt').innerHTML=confettiSVG()+HERO.map(p=>`<div class="packet${p.lg?' lg':''}" style="--x:${p.x};--y:${p.y};--r:${p.r}deg;--h:${p.h||Math.round((p.w||120)*1.36)}px;--d:${p.d}s">${p.img?`<img src="${p.img}" alt="" decoding="async">`:packet(p)}</div>`).join('');
+}
+function fromPrice(c){const ps=PRODUCTS.filter(p=>p.country===c.name&&p.regions.includes(region)).map(priceOf);return ps.length?Math.min(...ps):null;}
+function renderCountries(){
+  const list=COUNTRIES.filter(c=>c.regions.includes(region));
+  $('#countryGrid').innerHTML=list.map(c=>`<button class="country" type="button" data-country="${esc(c.name)}"><div class="country-art" style="--tint:${tint(c.color)}">${c.image?`<img src="${c.image}" alt="" loading="lazy" width="1200" height="900"><span class="cflag">${c.flag}</span>`:`<span class="flag">${c.flag}</span>`}</div><h3>${esc(c.name)}</h3>${fromPrice(c)?`<span class="from">From ${money(fromPrice(c))}</span>`:''}</button>`).join('');
+  const items=list.map(c=>`<button type="button" data-country="${esc(c.name)}"><span class="f">${c.flag}</span>${esc(c.name)}</button>`).join('');
+  $('#countryMenu').innerHTML=items;
+  $('#mobileCountries').innerHTML=items;
+}
+function matches(p,q){
+  const raw=p.name+' '+p.country+' '+p.tags+' '+p.inside.join(' ');
+  const hay=(raw+' '+L(raw)).toLowerCase();
+  return q.toLowerCase().split(/\s+/).filter(Boolean).every(w=>hay.includes(w));
+}
+function renderProducts(){
+  const q=currentFilter.trim();
+  const pool=PRODUCTS.filter(p=>p.regions.includes(region));
+  const list=q?pool.filter(p=>matches(p,q)):pool;
+  $('#productGrid').innerHTML=list.map(p=>`<article class="product" style="--tint:${tint(p.color)}">
+${p.badge==='New'?`<span class="badge new">New</span>`:''}
+<button class="product-art${p.image?' photo':''}" type="button" data-qv="${p.id}" aria-label="Quick view: ${esc(L(p.name))}">${art(p)}<span class="quick">Quick view</span></button>
+<div class="product-body">
+<div class="product-country">${p.flag} ${esc(p.country)}</div>
+<h3 class="product-name">${esc(L(p.name))}</h3>
+<div class="price-row"><span class="price">${money(priceOf(p))}</span><button class="btn btn-amber btn-sm" type="button" data-add="${p.id}">${L('Add to basket')}</button></div>
+</div></article>`).join('')||`<div class="empty"><p><strong>No boxes match “${esc(q)}” yet.</strong></p><p>Try a country like Poland, or a craving like chocolate.</p><p style="margin-top:1rem"><button class="btn btn-ink btn-sm" type="button" data-clear>Browse all boxes</button></p></div>`;
+  const note=$('#resultsNote');
+  if(q){note.hidden=false;note.innerHTML=`Showing ${list.length} ${list.length===1?'box':'boxes'} for “${esc(q)}” <button type="button" data-clear>Clear</button>`;}
+  else note.hidden=true;
+}
+function setFilter(q,scroll){
+  currentFilter=q;$('#searchInput').value=q;renderProducts();
+  if(scroll)$('#bestsellers').scrollIntoView({behavior:'smooth',block:'start'});
+}
+let selectedPlan='6m';
+function renderPlans(){
+  const base=priceOf(PLANS[0]);
+  $('#plans').innerHTML=PLANS.map(p=>{const pct=Math.floor((1-priceOf(p)/base)*100);return `<label class="plan${p.id===selectedPlan?' selected':''}"><input type="radio" name="plan" value="${p.id}"${p.id===selectedPlan?' checked':''}><span class="pl-text"><span class="pl-name">${esc(p.name)}${pct>0?`<span class="save">Save ${pct}%</span>`:''}</span><span class="pl-meta">${esc(p.meta)}</span></span><span class="pl-price">${money(priceOf(p))}<small>per box</small></span></label>`}).join('');
+}
+function renderStatic(){
+  $('#subArt').innerHTML=art(SUB_ART);
+  $('#valuesGrid').innerHTML=VALUES.map(v=>`<div class="value" style="--tint:${tint(v.color)}"><div class="value-art">${v.art()}</div><h3>${esc(L(v.title))}</h3><p>${esc(L(v.text))}</p></div>`).join('');
+  $('#collectionGrid').innerHTML=COLLECTIONS.map(c=>`<button class="collection" type="button" data-q="${esc(rn(c.q))}" style="--tint:${tint(c.color)}"><div class="collection-art${c.image?' photo':''}">${c.image?`<img src="${c.image}" alt="" loading="lazy" width="1200" height="900">`:c.art()}</div><h3>${esc(rn(c.name))}</h3></button>`).join('');
+  const cItems=COLLECTIONS.map(c=>`<button type="button" data-q="${esc(rn(c.q))}">${esc(rn(c.name))}</button>`).join('');
+  $('#collectionMenu').innerHTML=cItems;$('#mobileCollections').innerHTML=cItems;
+  $('#faqList').innerHTML=faqItems().map((f,i)=>`<details${i===0?' open':''}><summary>${esc(L(f.q))}</summary><p class="answer">${esc(L(f.a))}</p></details>`).join('');
+  $('#year').textContent=new Date().getFullYear();
+}
+
+/* ---------- basket ---------- */
+const KEY='snacks-of-europe-basket';
+let basket={};
+function loadBasket(){try{const s=localStorage.getItem(KEY);basket=s?(JSON.parse(s)||{}):{};}catch(e){basket={};}}
+function saveBasket(){try{localStorage.setItem(KEY,JSON.stringify(basket));}catch(e){}}
+function catalogue(id){
+  const p=PRODUCTS.find(x=>x.id===id);
+  if(p)return{id,name:L(p.name),price:priceOf(p),unit:'',art:()=>art(p),photo:!!p.image,tint:tint(p.color)};
+  const pl=PLANS.find(x=>'sub-'+x.id===id);
+  if(pl)return{id,name:'Snack subscription · '+pl.name,price:priceOf(pl),unit:'per box, billed monthly',art:()=>art(SUB_ART),photo:!!SUB_ART.image,tint:tint(SUB_ART.color)};
+  return null;
+}
+function basketLines(){return Object.entries(basket).map(([id,q])=>{const c=catalogue(id);return c?Object.assign({qty:q},c):null;}).filter(Boolean);}
+function renderBasket(){
+  const lines=basketLines(),FREE=R().free;
+  const count=lines.reduce((n,l)=>n+l.qty,0),total=lines.reduce((n,l)=>n+l.qty*l.price,0),left=Math.max(0,FREE-total);
+  $('#basketTotal').textContent=money(total);
+  const cnt=$('#basketCount');cnt.textContent=count;cnt.hidden=count===0;
+  $('#drawerSubtotal').textContent=money(total);
+  $('#shipMsg').textContent=total===0?R().shipEmpty:left>0?R().shipMore.replace('{n}',money(left)):R().shipDone;
+  $('#shipFill').style.width=Math.min(100,total/FREE*100)+'%';
+  $('#drawerItems').innerHTML=lines.length?lines.map(l=>`<div class="line" style="--tint:${l.tint}"><div class="thumb${l.photo?' photo':''}">${l.art()}</div><div><div class="nm">${esc(l.name)}</div>${l.unit?`<div class="unit">${esc(l.unit)}</div>`:''}<div class="qty"><button type="button" data-dec="${l.id}" aria-label="Decrease quantity">−</button><span>${l.qty}</span><button type="button" data-inc="${l.id}" aria-label="Increase quantity">+</button></div></div><div><div class="lp">${money(l.qty*l.price)}</div><button class="rm" type="button" data-rm="${l.id}">Remove</button></div></div>`).join('')
+    :`<div class="drawer-empty"><p>${L('Your basket is empty.')}</p><button class="btn btn-ink btn-sm" type="button" id="emptyShop">Browse the boxes</button></div>`;
+  $('#checkoutBtn').disabled=lines.length===0;
+}
+function addToBasket(id,qty){basket[id]=(basket[id]||0)+(qty||1);saveBasket();renderBasket();}
+function setQty(id,q){if(q<=0)delete basket[id];else basket[id]=q;saveBasket();renderBasket();}
+
+/* ---------- region switch ---------- */
+function regionButtons(fmt){return Object.values(REGIONS).map(x=>`<button type="button" data-region="${x.code}" class="${x.code===region?'on':''}">${fmt(x)}</button>`).join('');}
+function applyRegion(code,silent){
+  region=REGIONS[code]?code:'UK';
+  try{localStorage.setItem(RKEY,region);}catch(e){}
+  const r=R();
+  document.documentElement.lang=r.lang;
+  $('#announceText').innerHTML=r.announce;
+  $('#heroEyebrow').textContent=r.eyebrow;$('#heroSub').textContent=r.heroSub;
+  $('#trustDays').textContent=r.trustDays;$('#trustFree').textContent=r.trustFree;
+  $('#subCopy').textContent=r.subCopy;
+  $('#legal').textContent=r.legal;$('#payments').innerHTML=r.payments.map(x=>`<span>${x}</span>`).join('');
+  $('#footAbout').textContent=r.footerAbout;$('#footDelivery').textContent=L('Delivery & returns');
+  $('#drawerTitle').textContent=L('Your basket');$('#drawerNote').textContent=L('Delivery and discount codes are applied at checkout.');
+  $('#basketBtn').setAttribute('aria-label',L('Open basket'));$('#qvAdd').textContent=L('Add to basket');
+  $('#regionLabel').textContent=r.flag+' '+r.short;
+  $('#regionMenu').innerHTML=regionButtons(x=>`<span class="f">${x.flag}</span>${x.name}`);
+  $('#mobileRegion').innerHTML=regionButtons(x=>`<span class="f">${x.flag}</span>${x.name}`);
+  $('#footerRegion').innerHTML=regionButtons(x=>`${x.flag} ${x.code}`);
+  renderCountries();renderProducts();renderPlans();renderStatic();renderBasket();
+  if(!silent)toast(`Switched to the ${r.code} store. Prices now in ${r.curName}.`);
+}
+
+/* ---------- drawer, dialogs, toast ---------- */
+const drawer=$('#drawer'),scrim=$('#scrim');
+function openDrawer(){drawer.classList.add('open');drawer.inert=false;scrim.classList.add('show');document.body.style.overflow='hidden';$('#drawerClose').focus();}
+function closeDrawer(){drawer.classList.remove('open');drawer.inert=true;scrim.classList.remove('show');document.body.style.overflow='';}
+let toastT;
+function toast(msg){const t=$('#toast');t.textContent=msg;t.classList.add('show');clearTimeout(toastT);toastT=setTimeout(()=>t.classList.remove('show'),2600);}
+function openQuickView(id){
+  const p=PRODUCTS.find(x=>x.id===id);if(!p)return;
+  const qa=$('#qvArt');qa.innerHTML=art(p);qa.classList.toggle('photo',!!p.image);qa.style.setProperty('--tint',tint(p.color));
+  $('#qvCountry').textContent=p.flag+' '+p.country;
+  $('#qvName').textContent=L(p.name);
+  $('#qvDesc').textContent=L(p.desc);
+  $('#qvInside').innerHTML=p.inside.map(i=>`<li>${esc(L(i))}</li>`).join('');
+  $('#qvPrice').textContent=money(priceOf(p));
+  $('#qvAdd').dataset.add=p.id;
+  $('#qvDialog').showModal();
+}
+function closeMobile(){$('#mobileNav').classList.remove('open');$('#burger').setAttribute('aria-expanded','false');}
+
+/* ---------- events ---------- */
+document.addEventListener('click',e=>{
+  const t=e.target.closest('[data-add],[data-qv],[data-country],[data-q],[data-clear],[data-inc],[data-dec],[data-rm],[data-close],[data-region],#emptyShop');
+  if(!t)return;
+  const d=t.dataset;
+  if(d.add){addToBasket(d.add);const dg=t.closest('dialog');if(dg)dg.close();toast(L('Added to your basket'));openDrawer();}
+  else if(d.qv)openQuickView(d.qv);
+  else if(d.country){setFilter(d.country,true);closeMobile();}
+  else if(d.q){setFilter(d.q,true);closeMobile();}
+  else if('clear' in d)setFilter('',false);
+  else if(d.inc)setQty(d.inc,(basket[d.inc]||0)+1);
+  else if(d.dec)setQty(d.dec,(basket[d.dec]||0)-1);
+  else if(d.rm)setQty(d.rm,0);
+  else if('close' in d)t.closest('dialog').close();
+  else if(d.region){if(d.region!==region)applyRegion(d.region);closeMobile();t.blur();}
+  else if(t.id==='emptyShop'){closeDrawer();$('#bestsellers').scrollIntoView({behavior:'smooth'});}
+});
+$$('dialog').forEach(dg=>dg.addEventListener('click',e=>{if(e.target===dg)dg.close();}));
+$('#basketBtn').addEventListener('click',openDrawer);
+$('#drawerClose').addEventListener('click',closeDrawer);
+scrim.addEventListener('click',closeDrawer);
+document.addEventListener('keydown',e=>{if(e.key==='Escape'&&drawer.classList.contains('open'))closeDrawer();});
+$('#checkoutBtn').addEventListener('click',()=>toast('Checkout is not connected in this preview yet.'));
+$('#accountBtn').addEventListener('click',()=>toast('Accounts are not connected in this preview yet.'));
+$('#plans').addEventListener('change',e=>{selectedPlan=e.target.value;$$('.plan').forEach(l=>l.classList.toggle('selected',l.querySelector('input').value===selectedPlan));});
+$('#startSub').addEventListener('click',()=>{const pl=PLANS.find(p=>p.id===selectedPlan);addToBasket('sub-'+pl.id);toast(`Added the ${pl.name.toLowerCase()} subscription`);openDrawer();});
+let searchT;
+$('#searchInput').addEventListener('input',e=>{clearTimeout(searchT);searchT=setTimeout(()=>{currentFilter=e.target.value;renderProducts();},160);});
+$('#searchForm').addEventListener('submit',e=>{e.preventDefault();setFilter($('#searchInput').value,true);});
+$('#burger').addEventListener('click',()=>{const nav=$('#mobileNav'),open=!nav.classList.contains('open');nav.classList.toggle('open',open);$('#burger').setAttribute('aria-expanded',String(open));});
+$$('#mobileNav a').forEach(a=>a.addEventListener('click',closeMobile));
+$('#offerTab').addEventListener('click',()=>$('#offerDialog').showModal());
+$('#offerForm').addEventListener('submit',e=>{e.preventDefault();$('#offerForm').hidden=true;$('#offerCode').hidden=false;toast('Code sent. Check your inbox.');});
+$('#copyCode').addEventListener('click',async()=>{try{await navigator.clipboard.writeText('WELCOME10');toast('Copied: WELCOME10');}catch(e){toast('Your code is WELCOME10');}});
+$('#footerNews').addEventListener('submit',e=>{e.preventDefault();e.target.outerHTML='<div class="thanks">You’re in. Watch your inbox for your first offer.</div>';});
+
+/* ---------- init ---------- */
+drawer.inert=true;
+loadBasket();
+renderHero();
+let savedRegion=null;try{savedRegion=localStorage.getItem(RKEY);}catch(e){}
+applyRegion(savedRegion||((navigator.language||'').toLowerCase().startsWith('en-us')?'US':'UK'),true);
+})();
+</script>
+
+</body>
+</html>
