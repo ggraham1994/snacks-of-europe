@@ -124,6 +124,7 @@ img,svg{display:block;max-width:100%}
 .confetti{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
 .packet{position:absolute;left:var(--x);top:var(--y);height:calc(var(--h) * var(--s));rotate:var(--r);filter:drop-shadow(0 20px 22px rgba(0,8,60,.45));animation:settle .9s cubic-bezier(.2,.8,.2,1) both;animation-delay:var(--d,0s)}
 .packet img,.packet svg{height:100%;width:auto;display:block}
+.packet img{transform:scaleX(var(--pack-width-scale,1));transform-origin:center}
 @keyframes settle{from{translate:0 -30px}to{translate:0 0}}
 
 /* trust strip */
@@ -771,7 +772,7 @@ const HERO=[
   {img:'images/hero/hero-haribo.webp',x:'2%',y:'8%',r:-18,h:200,d:0},
   {img:'images/hero/hero-gletschereis.webp',x:'26%',y:'-3%',r:8,h:190,d:.08},
   {img:'images/hero/hero-pandistelle.webp',x:'50%',y:'3%',r:22,h:225,d:.16},
-  {img:'images/hero/hero-katja.webp',x:'76%',y:'-2%',r:-10,h:200,d:.24},
+  {img:'images/hero/hero-katja.webp',x:'76%',y:'-2%',r:-10,h:200,d:.24,widthScale:1.4},
   {img:'images/hero/hero-duyvis.webp',x:'-3%',y:'47%',r:12,h:190,d:.32,lg:true},
   {img:'images/hero/hero-baiocchi.webp',x:'21%',y:'42%',r:-8,h:170,d:.4},
   {img:'images/hero/hero-cotedor.webp',x:'53%',y:'45%',r:14,h:225,d:.48},
@@ -873,7 +874,7 @@ const tint=c=>shade(c,.86);
 let currentFilter='';
 
 function renderHero(){
-  $('#heroArt').innerHTML=confettiSVG()+HERO.map(p=>`<div class="packet${p.lg?' lg':''}" style="--x:${p.x};--y:${p.y};--r:${p.r}deg;--h:${p.h||Math.round((p.w||120)*1.36)}px;--d:${p.d}s">${p.img?`<img src="${p.img}" alt="" decoding="async">`:packet(p)}</div>`).join('');
+  $('#heroArt').innerHTML=confettiSVG()+HERO.map(p=>`<div class="packet${p.lg?' lg':''}" style="--x:${p.x};--y:${p.y};--r:${p.r}deg;--h:${p.h||Math.round((p.w||120)*1.36)}px;--d:${p.d}s;--pack-width-scale:${p.widthScale||1}">${p.img?`<img src="${p.img}" alt="" decoding="async">`:packet(p)}</div>`).join('');
 }
 function fromPrice(c){const ps=PRODUCTS.filter(p=>p.country===c.name&&p.regions.includes(region)).map(priceOf);return ps.length?Math.min(...ps):null;}
 function renderCountries(){
