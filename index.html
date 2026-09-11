@@ -125,6 +125,7 @@ img,svg{display:block;max-width:100%}
 .packet{position:absolute;left:var(--x);top:var(--y);height:calc(var(--h) * var(--s));rotate:var(--r);filter:drop-shadow(0 20px 22px rgba(0,8,60,.45));animation:settle .9s cubic-bezier(.2,.8,.2,1) both;animation-delay:var(--d,0s)}
 .packet img,.packet svg{height:100%;width:auto;display:block}
 .packet img{transform:scaleX(var(--pack-width-scale,1));transform-origin:center}
+.packet img[src="images/hero/hero-maoam.webp"]{max-width:none}
 @keyframes settle{from{translate:0 -30px}to{translate:0 0}}
 
 /* trust strip */
@@ -781,7 +782,7 @@ const HERO=[
   {img:'images/hero/hero-tuc.webp',x:'4%',y:'82%',r:-6,h:95,d:.64,lg:true},
   {img:'images/hero/hero-venco.webp',x:'36%',y:'84%',r:6,h:200,d:.72,lg:true},
   {img:'images/hero/hero-hanuta.webp',x:'64%',y:'82%',r:-14,h:170,d:.8,lg:true},
-  {img:'images/hero/hero-maoam.webp',x:'88%',y:'26%',r:16,h:180,d:.84,lg:true},
+  {img:'images/hero/hero-maoam.webp',x:'77%',y:'26%',r:16,h:180,d:.84,lg:true},
   {img:'images/hero/hero-lu.webp',x:'56%',y:'29%',r:-32,h:95,d:.88}
 ];
 const COUNTRIES=[
