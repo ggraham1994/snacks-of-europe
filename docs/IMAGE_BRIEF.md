@@ -46,3 +46,12 @@ tiles; `"style": "cutouts"` is the hero set; everything else is a box scene.
    visible edges.
 5. Commit to `main` with a message listing the images changed. GitHub Pages redeploys
    automatically within about a minute.
+
+## Product cutouts (all-products page and build-a-box)
+`tools/products.json` lists every product we stock: `id`, `ean`, `airtable` (record id in the EAN ID table),
+display `name`, `country`, `cat`, and the exact `image` path the page loads, `images/products/<EAN>.webp`.
+Produce one file per product at that path: the pack alone, straight on, transparent background, no shadow,
+480 px on the longer side, WebP with alpha, under 60 KB. The page shows a placeholder until the file exists,
+so partial batches are fine. Sources in order of preference: the product's Amazon listing main image
+(the Airtable record's "AMZ URL" links to it), the Airtable "Product Image" attachment, or a new photo.
+Never invent packaging: if no source exists, skip the product.
