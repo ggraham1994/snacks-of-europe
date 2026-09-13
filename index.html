@@ -351,7 +351,7 @@ dialog::backdrop{background:rgba(28,26,46,.55)}
 .item{background:var(--paper);border:1px solid var(--line);border-radius:16px;overflow:hidden;display:flex;flex-direction:column;transition:transform .15s,box-shadow .15s}
 .item:hover{transform:translateY(-3px);box-shadow:var(--shadow)}
 .item-art{aspect-ratio:1;background:var(--tint);display:grid;place-items:center;padding:1rem}
-.item-art img{width:auto;height:100%;max-width:100%;object-fit:contain}
+.item-art img{position:absolute;inset:1rem;width:calc(100% - 2rem);height:calc(100% - 2rem);object-fit:contain}
 .item-art.missing::before{content:attr(data-flag);font-size:2.4rem;line-height:1}
 .item-art.missing::after{content:"Photo coming";position:absolute;bottom:.5rem;font-size:.68rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-soft)}
 .item-art{position:relative}
