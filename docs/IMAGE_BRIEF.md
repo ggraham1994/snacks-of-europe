@@ -6,6 +6,9 @@ file name, pixel size, format and (for hero cutouts) transparency. Replace the f
 the page picks it up; no HTML changes are needed.
 
 ## Brand look
+- Box scenes use `eu-22.webp` as the fixed size reference: front panel x=110–1090,
+  bottom y=850 on the 1200×900 canvas, rim y=605 at the sides dipping to y=650
+  at the centre. Preserve product proportions when arranging the contents.
 - Open cardboard box in the box's colour, front panel reading **<COUNTRY> EDITION** in
   large bold white uppercase on top, a thin white divider line, then **SNACKS OF EUROPE**
   in smaller white uppercase below (about half the top line's letter height). Keep a
