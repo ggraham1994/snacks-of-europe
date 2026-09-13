@@ -500,8 +500,8 @@ dialog::backdrop{background:rgba(28,26,46,.55)}
         </div>
         <div class="sub-copy">
           <p class="eyebrow">Subscribe &amp; save</p>
-          <h2>A different country in every box</h2>
-          <p id="subCopy">12 to 29 snacks from a new European country each month, with a tasting card that tells the story behind every packet. Free UK delivery on every box. Pause, skip or cancel any time.</p>
+          <h2>A new country lands every month</h2>
+          <p id="subCopy">15 to 22 snacks from a different European country each month, with a tasting card that tells the story behind every packet. Free UK delivery on every box. Pause, skip or cancel any time.</p>
           <div class="plans" id="plans" role="radiogroup" aria-label="Subscription plan"></div>
           <button class="btn btn-amber" type="button" id="startSub">Start my subscription</button>
           <p class="fine">First box ships within 3 working days. Billed per box, no joining fee.</p>
@@ -513,7 +513,7 @@ dialog::backdrop{background:rgba(28,26,46,.55)}
   <section class="section" id="gifting" style="padding-top:0">
     <div class="wrap">
       <div class="section-head">
-        <div><p class="eyebrow">Why people send them</p><h2>A taste of home, packed with care</h2><p>Whether you're sending comfort overseas, surprising a friend or stocking the snack table, one box does the job.</p></div>
+        <div><p class="eyebrow">Why people send them</p><h2>More than a box of snacks</h2><p>Send comfort to someone far away, surprise a friend, or feed a crowd. Every box is packed by hand and arrives with a story to tell.</p></div>
       </div>
       <div class="values-grid" id="valuesGrid"></div>
     </div>
@@ -738,7 +738,7 @@ const REGIONS={
     eyebrow:'European snack boxes · Delivered UK-wide',
     heroSub:'Authentic treats from Poland, Germany, Italy, France, the Netherlands and beyond. Picked by locals, packed in Manchester or Germany and at your door in 2–4 days.',
     trustDays:'2–4 day tracked delivery',trustFree:'Free delivery over £40',
-    subCopy:'12 to 29 snacks from a new European country each month, with a tasting card that tells the story behind every packet. Free UK delivery on every box. Pause, skip or cancel any time.',
+    subCopy:'15 to 22 snacks from a different European country each month, with a tasting card that tells the story behind every packet. Free UK delivery on every box. Pause, skip or cancel any time.',
     statDays:'2–4 days',shipEmpty:'Free UK delivery on orders over £40',shipMore:'Spend {n} more for free UK delivery',shipDone:'You’ve unlocked free UK delivery',
     legal:'Snacks of Europe',payments:['VISA','MASTERCARD','AMEX','APPLE PAY','GOOGLE PAY','PAYPAL','KLARNA'],
     footerAbout:'We import the snacks Europe grew up on, straight from the supermarkets they come from. Packed by hand in Manchester or Germany.',
@@ -751,7 +751,7 @@ const REGIONS={
     eyebrow:'European snack boxes · Delivered across the US',
     heroSub:'Authentic treats from Poland, Germany, Italy, France, the UK and beyond. Picked by locals, packed in Manchester or Germany and at your door in 7–10 days.',
     trustDays:'7–10 day tracked shipping',trustFree:'Free shipping over $49',
-    subCopy:'12 to 29 snacks from a new European country each month, with a tasting card that tells the story behind every packet. Free US shipping on every box. Pause, skip or cancel any time.',
+    subCopy:'15 to 22 snacks from a different European country each month, with a tasting card that tells the story behind every packet. Free US shipping on every box. Pause, skip or cancel any time.',
     statDays:'2–5 days',shipEmpty:'Free US shipping on orders over $49',shipMore:'Spend {n} more for free US shipping',shipDone:'You’ve unlocked free US shipping',
     legal:'Snacks of Europe',payments:['VISA','MASTERCARD','AMEX','DISCOVER','APPLE PAY','GOOGLE PAY','PAYPAL','AFFIRM'],
     footerAbout:'We import the snacks Europe grew up on, straight from the supermarkets they come from. Packed by hand in Manchester or Germany.',
@@ -846,9 +846,9 @@ const PLANS=[
   {id:'6m',name:'6-month plan',meta:'Half a year of snacks.',price:{UK:29.99,US:34.99}}
 ];
 const VALUES=[
-  {title:'Made for parties & snack tables',text:'Birthdays, BBQs, movie nights and office Fridays get better with a box of crowd-pleasers. Easy to share, fun to unpack, guaranteed to start a conversation.',color:'#F28C28',art:()=>packet({w:96,fill:'#F28C28',label:'CRISPS',sub:'PAPRIKA',accent:'#3A86FF'})},
-  {title:'Packed with the snacks people miss',text:'From Polish wafers to Spanish olive-oil crisps, every box is full of the treats people grew up with, miss, or have always wanted to try.',color:'#5D3A1A',art:()=>packet({w:150,shape:'bar',fill:'#5D3A1A',accent:'#F5A524',label:'CHOC',sub:'HAZELNUT'})},
-  {title:'The gift that feels personal',text:'Care packages, homesick students, expat birthdays and Christmas from afar. Add a handwritten note at checkout and we will tuck it in on top.',color:'#D8232A',art:()=>giftArt('#D8232A')}
+  {title:'Feeds a crowd',text:'Film nights, birthdays, office Fridays and big-match weekends go better with a box everyone can dig into. Open it in the middle of the table and watch it empty.',color:'#F28C28',art:()=>packet({w:96,fill:'#F28C28',label:'CRISPS',sub:'PAPRIKA',accent:'#3A86FF'})},
+  {title:'The brands they grew up with',text:'Prince Polo, Haribo, Baiocchi, Venco: the real supermarket favourites of each country, never lookalikes, with a tasting card that explains what is what.',color:'#5D3A1A',art:()=>packet({w:150,shape:'bar',fill:'#5D3A1A',accent:'#F5A524',label:'CHOC',sub:'HAZELNUT'})},
+  {title:'A gift that says you remembered',text:'For students far from home, expat birthdays and Christmas spent in another country. Add a note at checkout and we will tuck it under the lid.',color:'#D8232A',art:()=>giftArt('#D8232A')}
 ];
 const COLLECTIONS=[
   {name:'Chocolates',count:64,color:'#5D3A1A',q:'chocolate',image:'images/coll-chocolates.webp',art:()=>packet({w:120,shape:'bar',fill:'#5D3A1A',accent:'#F5A524',label:'CHOC',sub:'MILK'})},
@@ -860,12 +860,12 @@ const COLLECTIONS=[
 ];
 
 const faqItems=()=>[
-  {q:'Who is Snacks of Europe?',a:R().about},
-  {q:'How much is delivery and how fast is it?',a:R().faqDelivery},
-  {q:'Can I return my order?',a:'Snacks are perishable so we cannot take them back, but every box is covered by our happiness guarantee. If anything arrives damaged, out of date or missing, tell us within 30 days and we will replace it or refund it.'},
+  {q:'Who is behind Snacks of Europe?',a:R().about},
+  {q:'What does delivery cost, and how long does it take?',a:R().faqDelivery},
+  {q:'What if something arrives damaged or out of date?',a:'Snacks are perishable so we cannot take them back, but every box is covered by our happiness guarantee. If anything arrives damaged, out of date or missing, tell us within 30 days and we will replace it or refund it.'},
   {q:'Can I get a bulk or corporate discount?',a:'Yes. '+R().bulkContact+' We will quote for the quantity, and can add a branded note card.'},
-  {q:'Can I customise my box?',a:'Every box comes with a set line-up so we can keep prices down, but you can swap out anything you are allergic to at checkout. Build-a-box, where you pick every packet, is on the way.'},
-  {q:'Where are the products sourced from?',a:'From the country on the box. Nothing is a locally made lookalike. Every product is relabelled to meet '+R().labelRules+', so you get the real thing and the right information.'},
+  {q:'Can I swap items in a box?',a:'Every box comes with a set line-up so we can keep prices down, but you can swap out anything you are allergic to at checkout. Build-a-box, where you pick every packet, is on the way.'},
+  {q:'Where do the snacks come from?',a:'From the country on the box. Nothing is a locally made lookalike. Every product is relabelled to meet '+R().labelRules+', so you get the real thing and the right information.'},
   {q:R().faqAbroadQ,a:R().faqAbroadA}
 ];
 
