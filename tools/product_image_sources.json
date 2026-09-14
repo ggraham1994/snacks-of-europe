@@ -1,0 +1,442 @@
+[
+  {
+    "ean": "4009267003089",
+    "asin": "B003UMK3PM",
+    "url": "https://images-na.ssl-images-amazon.com/images/P/B003UMK3PM.01.LZZZZZZZ.jpg"
+  },
+  {
+    "ean": "5023274007471",
+    "asin": "B005VYP7IU",
+    "url": "https://images-na.ssl-images-amazon.com/images/P/B005VYP7IU.01.LZZZZZZZ.jpg",
+    "polygon": [
+      [
+        0.12,
+        0.085
+      ],
+      [
+        0.36,
+        0.108
+      ],
+      [
+        0.58,
+        0.098
+      ],
+      [
+        0.72,
+        0.108
+      ],
+      [
+        0.778,
+        0.099
+      ],
+      [
+        0.78,
+        0.16
+      ],
+      [
+        0.72,
+        0.44
+      ],
+      [
+        0.71,
+        0.62
+      ],
+      [
+        0.765,
+        0.798
+      ],
+      [
+        0.75,
+        0.814
+      ],
+      [
+        0.48,
+        0.806
+      ],
+      [
+        0.31,
+        0.8
+      ],
+      [
+        0.102,
+        0.814
+      ],
+      [
+        0.104,
+        0.73
+      ],
+      [
+        0.124,
+        0.59
+      ],
+      [
+        0.132,
+        0.43
+      ],
+      [
+        0.145,
+        0.34
+      ],
+      [
+        0.106,
+        0.218
+      ],
+      [
+        0.108,
+        0.14
+      ]
+    ]
+  },
+  {
+    "ean": "4008400441023",
+    "asin": "B004KSIVHM",
+    "url": "https://images-na.ssl-images-amazon.com/images/P/B004KSIVHM.01.LZZZZZZZ.jpg"
+  },
+  {
+    "ean": "4018077764011",
+    "asin": "B013R5E4S8",
+    "url": "https://images-na.ssl-images-amazon.com/images/P/B013R5E4S8.01.LZZZZZZZ.jpg"
+  },
+  {
+    "ean": "4033500101768",
+    "asin": "B01C469PHQ",
+    "url": "https://images-na.ssl-images-amazon.com/images/P/B01C469PHQ.01.LZZZZZZZ.jpg"
+  },
+  {
+    "ean": "4014400930054",
+    "asin": "B006L3AB6S",
+    "url": "https://images-na.ssl-images-amazon.com/images/P/B006L3AB6S.01.LZZZZZZZ.jpg"
+  },
+  {
+    "ean": "4009300016953",
+    "asin": "B086W4ZRD1",
+    "url": "https://images-na.ssl-images-amazon.com/images/P/B086W4ZRD1.01.LZZZZZZZ.jpg"
+  },
+  {
+    "ean": "4009300009863",
+    "asin": "B0073D1GJQ",
+    "url": "https://images-na.ssl-images-amazon.com/images/P/B0073D1GJQ.01.LZZZZZZZ.jpg"
+  },
+  {
+    "ean": "4009300019374",
+    "asin": "B0079JE07E",
+    "url": "https://images-na.ssl-images-amazon.com/images/P/B0079JE07E.01.LZZZZZZZ.jpg",
+    "polygon": [
+      [
+        0.156,
+        0.256
+      ],
+      [
+        0.844,
+        0.256
+      ],
+      [
+        0.844,
+        0.746
+      ],
+      [
+        0.156,
+        0.746
+      ]
+    ]
+  },
+  {
+    "ean": "4009300005926",
+    "asin": "B003UCXTQC",
+    "url": "https://images-na.ssl-images-amazon.com/images/P/B003UCXTQC.01.LZZZZZZZ.jpg"
+  },
+  {
+    "ean": "4009300005865",
+    "asin": "B003UDBGKC",
+    "url": "https://images-na.ssl-images-amazon.com/images/P/B003UDBGKC.01.LZZZZZZZ.jpg"
+  },
+  {
+    "ean": "4009300005872",
+    "asin": "B0046BOS48",
+    "url": "https://images-na.ssl-images-amazon.com/images/P/B0046BOS48.01.LZZZZZZZ.jpg"
+  },
+  {
+    "ean": "4009300012719",
+    "asin": "B0142QAMGE",
+    "url": "https://images-na.ssl-images-amazon.com/images/P/B0142QAMGE.01.LZZZZZZZ.jpg"
+  },
+  {
+    "ean": "8002190003320",
+    "asin": "B00XUMP3N4",
+    "url": "https://images-na.ssl-images-amazon.com/images/P/B00XUMP3N4.01.LZZZZZZZ.jpg"
+  },
+  {
+    "ean": "8000500283158",
+    "asin": "B003VYTIZU",
+    "url": "https://images-na.ssl-images-amazon.com/images/P/B003VYTIZU.01.LZZZZZZZ.jpg"
+  },
+  {
+    "ean": "8076809580007",
+    "asin": "B08XNT9DKQ",
+    "url": "https://images-na.ssl-images-amazon.com/images/P/B08XNT9DKQ.01.LZZZZZZZ.jpg"
+  },
+  {
+    "ean": "8076809583039",
+    "asin": "B0BSH54CFS",
+    "url": "https://images-na.ssl-images-amazon.com/images/P/B0BSH54CFS.01.LZZZZZZZ.jpg"
+  },
+  {
+    "ean": "8076809547550",
+    "asin": "B00PA2VCLO",
+    "url": "https://images-na.ssl-images-amazon.com/images/P/B00PA2VCLO.01.LZZZZZZZ.jpg"
+  },
+  {
+    "ean": "40084176",
+    "asin": "B0140EB79E",
+    "url": "https://images-na.ssl-images-amazon.com/images/P/B0140EB79E.01.LZZZZZZZ.jpg"
+  },
+  {
+    "ean": "8017139101531",
+    "asin": "B07YJH77NW",
+    "url": "https://images-na.ssl-images-amazon.com/images/P/B07YJH77NW.01.LZZZZZZZ.jpg"
+  },
+  {
+    "ean": "8008380001732",
+    "asin": "B0054JPTBM",
+    "url": "https://images-na.ssl-images-amazon.com/images/P/B0054JPTBM.01.LZZZZZZZ.jpg"
+  },
+  {
+    "ean": "8004190053015",
+    "asin": "B00XUR5X16",
+    "url": "https://images-na.ssl-images-amazon.com/images/P/B00XUR5X16.01.LZZZZZZZ.jpg"
+  },
+  {
+    "ean": "8003000024917",
+    "asin": "B001W7XQGA",
+    "url": "https://images-na.ssl-images-amazon.com/images/P/B001W7XQGA.01.LZZZZZZZ.jpg"
+  },
+  {
+    "ean": "8007100056007",
+    "asin": "B00XPVH5RC",
+    "url": "https://images-na.ssl-images-amazon.com/images/P/B00XPVH5RC.01.LZZZZZZZ.jpg"
+  },
+  {
+    "ean": "8710496979125",
+    "asin": "B001BBUA3Y",
+    "url": "https://images-na.ssl-images-amazon.com/images/P/B001BBUA3Y.01.LZZZZZZZ.jpg"
+  },
+  {
+    "ean": "8710496978975",
+    "asin": "B0043P3GE0",
+    "url": "https://images-na.ssl-images-amazon.com/images/P/B0043P3GE0.01.LZZZZZZZ.jpg"
+  },
+  {
+    "ean": "8718500445024",
+    "asin": "B00AC5WG2S",
+    "url": "https://images-na.ssl-images-amazon.com/images/P/B00AC5WG2S.01.LZZZZZZZ.jpg"
+  },
+  {
+    "ean": "8711000396780",
+    "asin": "B07DRNZ7LJ",
+    "url": "https://images-na.ssl-images-amazon.com/images/P/B07DRNZ7LJ.01.LZZZZZZZ.jpg"
+  },
+  {
+    "ean": "8710497440013",
+    "url": "https://m.media-amazon.com/images/I/61GidsFZHvL._SL1000_.jpg",
+    "page": "https://www.amazon.de/dp/B0041HAPP8",
+    "asin": "B0041HAPP8"
+  },
+  {
+    "ean": "4008400121321",
+    "url": "https://m.media-amazon.com/images/I/71TjgcHvwmS._SL1500_.jpg",
+    "page": "https://www.amazon.de/dp/B00H4J7NLE",
+    "asin": "B00H4J7NLE"
+  },
+  {
+    "ean": "4014400901818",
+    "url": "https://m.media-amazon.com/images/I/91pzmAE1HSL._SL1500_.jpg",
+    "page": "https://www.amazon.de/dp/B003TUIHFS",
+    "asin": "B003TUIHFS"
+  },
+  {
+    "ean": "4009300005834",
+    "url": "https://m.media-amazon.com/images/I/61eP0vSdJyL._SL1000_.jpg",
+    "page": "https://www.amazon.de/dp/B000LQNC62",
+    "asin": "B000LQNC62"
+  },
+  {
+    "ean": "8001585001330",
+    "url": "https://m.media-amazon.com/images/I/51uTtoZI6uL._AC_SL1000_.jpg",
+    "page": "https://www.amazon.de/dp/B0057VQRCW",
+    "asin": "B0057VQRCW"
+  },
+  {
+    "ean": "8001585001507",
+    "url": "https://m.media-amazon.com/images/I/71AxqVwBliL._AC_SL1500_.jpg",
+    "page": "https://www.amazon.co.uk/dp/B079TKWW9H",
+    "asin": "B079TKWW9H"
+  },
+  {
+    "ean": "8000605040281",
+    "url": "https://m.media-amazon.com/images/I/81Zsifj5y+L._SL1500_.jpg",
+    "page": "https://www.amazon.de/dp/B01MZIEFB2",
+    "asin": "B01MZIEFB2",
+    "crop": [
+      0,
+      0,
+      1,
+      0.25
+    ]
+  },
+  {
+    "ean": "8033102690086",
+    "url": "https://m.media-amazon.com/images/I/81uFB1MztnL._AC_SL1500_.jpg",
+    "page": "https://www.amazon.co.uk/dp/B01J1MJ1BQ",
+    "asin": "B01J1MJ1BQ",
+    "crop": [
+      0,
+      0,
+      0.5,
+      0.5
+    ]
+  },
+  {
+    "ean": "8076809574969",
+    "url": "https://m.media-amazon.com/images/I/71bKuglmS3L._AC_SL1419_.jpg",
+    "page": "https://www.amazon.co.uk/dp/B07RS3N5SF",
+    "asin": "B07RS3N5SF",
+    "crop": [
+      0,
+      0,
+      1,
+      0.25
+    ]
+  },
+  {
+    "ean": "8032523534276",
+    "url": "https://m.media-amazon.com/images/I/61LiS7c7MqL._SL1256_.jpg",
+    "page": "https://www.amazon.de/dp/B0C6Q6LB9S",
+    "asin": "B0C6Q6LB9S"
+  },
+  {
+    "ean": "8013399111822",
+    "url": "https://m.media-amazon.com/images/I/71nMd39ODbL._SL1500_.jpg",
+    "page": "https://www.amazon.de/dp/B019IO2SUS",
+    "asin": "B019IO2SUS",
+    "polygon": [
+      [
+        0.202,
+        0.03
+      ],
+      [
+        0.801,
+        0.03
+      ],
+      [
+        0.798,
+        0.145
+      ],
+      [
+        0.775,
+        0.36
+      ],
+      [
+        0.769,
+        0.54
+      ],
+      [
+        0.778,
+        0.71
+      ],
+      [
+        0.801,
+        0.963
+      ],
+      [
+        0.203,
+        0.963
+      ],
+      [
+        0.207,
+        0.89
+      ],
+      [
+        0.229,
+        0.747
+      ],
+      [
+        0.232,
+        0.53
+      ],
+      [
+        0.225,
+        0.35
+      ],
+      [
+        0.207,
+        0.155
+      ]
+    ]
+  },
+  {
+    "ean": "8004190052827",
+    "url": "https://m.media-amazon.com/images/I/81-1wakWXKL._SL1500_.jpg",
+    "page": "https://www.amazon.de/dp/B01MRX6A7U",
+    "asin": "B01MRX6A7U",
+    "crop": [
+      0,
+      0,
+      0.5,
+      0.5
+    ]
+  },
+  {
+    "ean": "8710496978609",
+    "url": "https://m.media-amazon.com/images/I/81d96jIP0CL._SL1500_.jpg",
+    "page": "https://www.amazon.com/dp/B006EICAZU",
+    "asin": "B006EICAZU",
+    "crop": [
+      0,
+      0,
+      0.64,
+      1
+    ]
+  },
+  {
+    "ean": "8716100360471",
+    "url": "https://m.media-amazon.com/images/I/61Ytj3NyXpL._SL1000_.jpg",
+    "page": "https://www.amazon.de/dp/B0DTTZWV6Q",
+    "asin": "B0DTTZWV6Q"
+  },
+  {
+    "ean": "8714200219644",
+    "url": "https://m.media-amazon.com/images/I/61nTIRDQR8L._SL1500_.jpg",
+    "page": "https://www.amazon.de/dp/B0CJ9D9Y45",
+    "asin": "B0CJ9D9Y45"
+  },
+  {
+    "ean": "8714200220022",
+    "url": "https://m.media-amazon.com/images/I/615YIL8qCsL._SL1200_.jpg",
+    "page": "https://www.amazon.de/dp/B0CXZQGVWX",
+    "asin": "B0CXZQGVWX"
+  },
+  {
+    "ean": "7622210396334",
+    "url": "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/202303/31/00120660909084____1__1200x1200.jpg"
+  },
+  {
+    "ean": "4009077555235",
+    "url": "https://www.bie-dro.com/media/image/20/92/67/52309_V01_600x600.jpg"
+  },
+  {
+    "ean": "4009300012726",
+    "url": "https://cdn02.plentymarkets.com/t4l5octwuee2/item/images/194185/full/4009300012726-Teekanne-Rooibos-Sahne-Karamell-Geschmack-20-Doppelkammerbeutel-35g.jpg"
+  },
+  {
+    "ean": "40144382",
+    "url": "https://images.storck.com/en_SG/knoppers_25g.webp?noWhitespace=1"
+  },
+  {
+    "ean": "4021700900021",
+    "url": "https://www.aktionspreis.de/produkt_bilder/og/nippon-200g.webp"
+  },
+  {
+    "ean": "8714600003041",
+    "url": "https://cdn11.bigcommerce.com/s-ekskcalehb/images/stencil/1280x1280/products/8612/266613/214740__44521.1606182735.jpg?c=2%3Fimbypass%3Don"
+  }
+]
