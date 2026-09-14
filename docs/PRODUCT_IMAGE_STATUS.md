@@ -6,6 +6,6 @@ The studio-photo refresh replaces 39 existing images and fills 11 missing images
 
 Every file is 480px on its longest side, preserves source proportions, contains transparency and is below 60KB. Outputs use WebP quality 84. White wrappers and multipack source crops require visual review; automatic background removal alone is not sufficient.
 
-Rejected alternatives included De Ruijter Kleintjes photos showing a different weight and a Perugina photo with loose sweets obscuring the wrapper. Their previous images remain unchanged; image coverage does not mean all sources are equally high quality.
+The subsequent Fondenti correction replaces the sideways image with the manufacturer's upright 175g packshot (EAN 8006150200132), bringing the source manifest to 51 images. The Amazon alternative with loose sweets obscuring the wrapper was rejected. De Ruijter Kleintjes retains its previous image because the alternatives showed a different weight.
 
 Run `python3 tools/check_product_images.py` to validate the assets. To reproduce a cutout, download its recorded source, add a local `path` to that manifest entry, and run `python3 tools/export_product_packshots.py manifest.json --out images/products` (Pillow, numpy and OpenCV required). Review each result before publishing.

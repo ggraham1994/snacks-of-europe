@@ -959,7 +959,7 @@ function itemTile(i,mode){
   const c=countryOf(i.country),q=build.items[i.id]||0;
   const ctl=mode==='shop'?`<button class="btn btn-amber btn-sm" type="button" data-add="${i.id}">${L('Add')}</button>`
     :`<div class="qty"><button type="button" data-bdec="${i.id}" aria-label="Remove one">−</button><span>${q}</span><button type="button" data-binc="${i.id}" aria-label="Add one">+</button></div>`;
-  return `<article class="item${mode==='build'&&q?' chosen':''}" style="--tint:${tint(c.color)}"><div class="item-art" data-flag="${c.flag}"><img src="${i.image}?v=studio-2" alt="" loading="lazy" width="480" height="480" onerror="this.parentNode.classList.add('missing');this.remove()"></div><div class="item-body"><div class="item-name">${esc(L(i.name))}</div><div class="item-meta">${c.flag} ${esc(i.country)} · ${esc(L(CATS[i.cat]))}</div><div class="item-row"><span class="item-price">${money(priceOf(i))}</span>${ctl}</div></div></article>`;
+  return `<article class="item${mode==='build'&&q?' chosen':''}" style="--tint:${tint(c.color)}"><div class="item-art" data-flag="${c.flag}"><img src="${i.image}?v=studio-3" alt="" loading="lazy" width="480" height="480" onerror="this.parentNode.classList.add('missing');this.remove()"></div><div class="item-body"><div class="item-name">${esc(L(i.name))}</div><div class="item-meta">${c.flag} ${esc(i.country)} · ${esc(L(CATS[i.cat]))}</div><div class="item-row"><span class="item-price">${money(priceOf(i))}</span>${ctl}</div></div></article>`;
 }
 function renderCatalog(){
   chips($('#countryChips'),catFilter,'country',countryList(),'All countries');chips($('#catChips'),catFilter,'cat',Object.entries(CATS).map(([k,v])=>[k,L(v)]),'Everything');
