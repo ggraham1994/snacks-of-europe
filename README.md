@@ -1,11 +1,12 @@
 # Snacks of Europe
 
-Static storefront preview with two stores built from one source file.
+Static storefront preview with two separate stores built from one source file.
+The stores never link to each other: no switcher, no picker, no cross-store links. Keep it that way.
 
 | Path | What it is |
 | --- | --- |
 | `src/site.html` | The only file to edit. One page holding both stores' copy, prices and box line-ups. |
-| `index.html` | Landing page. Sends each visitor to the UK or US store by saved choice, language or time zone. Add `?choose` to see the picker. |
+| `index.html` | Silent router. Sends each visitor to the UK or US store by browser language and time zone. It shows no picker. |
 | `uk/index.html` | UK store: GBP, UK delivery copy, UK-only boxes. Generated. |
 | `us/index.html` | US store: USD, US shipping copy, US-only boxes. Generated. |
 | `images/` | Box, country, hero and product photos, shared by both stores. |
@@ -28,4 +29,4 @@ and the base URL for canonical links is `BASE_URL` at the top of the build scrip
 python3 -m http.server 8768
 ```
 
-Then open http://localhost:8768/ for the landing page, or `/uk/` and `/us/` for a store.
+Then open http://localhost:8768/uk/ or http://localhost:8768/us/. The root address redirects to one of them.

@@ -4,60 +4,22 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Snacks of Europe · Choose your store</title>
-<meta name="description" content="European snack boxes for the UK and the US. Choose your store to see prices and delivery for where you live.">
-<link rel="canonical" href="https://ggraham1994.github.io/snacks-of-europe/">
-<link rel="alternate" hreflang="en-GB" href="https://ggraham1994.github.io/snacks-of-europe/uk/">
-<link rel="alternate" hreflang="en-US" href="https://ggraham1994.github.io/snacks-of-europe/us/">
-<link rel="alternate" hreflang="x-default" href="https://ggraham1994.github.io/snacks-of-europe/">
+<title>Snacks of Europe</title>
+<meta name="robots" content="noindex">
 <link rel="icon" type="image/svg+xml" href="favicon.svg?v=3">
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png?v=3">
 <link rel="icon" type="image/png" sizes="192x192" href="favicon-192.png?v=3">
 <link rel="apple-touch-icon" href="apple-touch-icon.png?v=3">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@700;800&family=Figtree:wght@400;600;700&display=swap">
 <script>
 (function(){
-  try{
-    if(new URLSearchParams(location.search).has('choose'))return;
-    var saved=localStorage.getItem('snacks-of-europe-site');
-    var site=(saved==='UK'||saved==='US')?saved:null;
-    if(!site){
-      var lang=(navigator.language||'').toLowerCase(),tz='';
-      try{tz=Intl.DateTimeFormat().resolvedOptions().timeZone||''}catch(e){}
-      site=(lang==='en-us'||/^America\//.test(tz))?'US':'UK';
-    }
-    location.replace(site.toLowerCase()+'/'+location.hash);
-  }catch(e){}
+  var lang=(navigator.language||'').toLowerCase(),tz='';
+  try{tz=Intl.DateTimeFormat().resolvedOptions().timeZone||''}catch(e){}
+  var us=lang==='en-us'||/^America\//.test(tz);
+  location.replace((us?'us/':'uk/')+location.hash);
 })();
 </script>
-<style>
-:root{--cream:#FBF6EC;--ink:#1F1B2E;--ink-soft:#5A5670;--amber:#F5A524;--line:rgba(31,27,46,.12)}
-*{box-sizing:border-box}html{color-scheme:light}
-body{margin:0;min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:2rem 1rem;background:var(--cream);color:var(--ink);font-family:Figtree,system-ui,sans-serif;background-image:repeating-linear-gradient(135deg,#D8232A 0 18px,#fff 18px 36px,#2B4FA8 36px 54px,#fff 54px 72px);background-size:100% 8px;background-repeat:no-repeat}
-.brand{display:flex;align-items:center;gap:.75rem;margin-bottom:1.5rem;text-decoration:none;color:inherit}
-.brand .mark{width:44px;height:44px;border-radius:12px;background:#2B4FA8;display:grid;place-items:center;color:#FFD166;font-size:1.3rem}
-.brand b{font-family:"Bricolage Grotesque",sans-serif;font-size:1.25rem;line-height:1.05;display:block}
-.brand small{font-size:.68rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#D8232A}
-h1{font-family:"Bricolage Grotesque",sans-serif;font-size:clamp(1.8rem,4vw,2.6rem);margin:0 0 .4rem;text-align:center;letter-spacing:-.02em}
-p.lead{margin:0 0 2rem;color:var(--ink-soft);text-align:center;max-width:34rem}
-.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1rem;width:100%;max-width:680px}
-.card{display:flex;flex-direction:column;gap:.35rem;padding:1.5rem;border:1px solid var(--line);border-radius:20px;background:#fff;text-decoration:none;color:inherit;box-shadow:0 10px 30px rgba(31,27,46,.06);transition:transform .15s,box-shadow .15s}
-.card:hover{transform:translateY(-2px);box-shadow:0 16px 40px rgba(31,27,46,.12)}
-.flag{font-size:2.4rem;line-height:1}
-.name{font-family:"Bricolage Grotesque",sans-serif;font-size:1.35rem;font-weight:800;margin-top:.5rem}
-.blurb{color:var(--ink-soft);line-height:1.45}
-.go{margin-top:.75rem;font-weight:700;color:var(--ink);background:var(--amber);border-radius:999px;padding:.55rem 1rem;align-self:flex-start}
-.note{margin-top:2rem;font-size:.85rem;color:var(--ink-soft);text-align:center}
-</style>
+<noscript><meta http-equiv="refresh" content="0;url=uk/"></noscript>
+<style>html{color-scheme:light}body{margin:0;background:#FBF6EC}</style>
 </head>
-<body>
-<a class="brand" href="?choose"><span class="mark">★</span><span><b>Snacks of<br>Europe</b><small>Snacks from home</small></span></a>
-<h1>Choose your store</h1>
-<p class="lead">Two stores, one warehouse of favourites. Pick where we are delivering and we will remember it next time.</p>
-<div class="cards"><a class="card" href="uk/" hreflang="en-GB" data-site="UK"><span class="flag">🇬🇧</span><span class="name">UK store</span><span class="blurb">Prices in pounds. Free delivery over £40, tracked and at your door in 2–4 working days.</span><span class="go">Shop the UK store →</span></a><a class="card" href="us/" hreflang="en-US" data-site="US"><span class="flag">🇺🇸</span><span class="name">US store</span><span class="blurb">Prices in dollars. Free shipping over $49, tracked and delivered in 7–10 business days.</span><span class="go">Shop the US store →</span></a></div>
-<p class="note">Shipping somewhere else? The UK store delivers to Ireland and mainland Europe, the US store to Canada.</p>
-<script>document.querySelectorAll('.card').forEach(function(a){a.addEventListener('click',function(){try{localStorage.setItem('snacks-of-europe-site',a.dataset.site)}catch(e){}})});</script>
-</body>
+<body></body>
 </html>

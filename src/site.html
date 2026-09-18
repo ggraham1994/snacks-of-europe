@@ -93,7 +93,7 @@ img,svg{display:block;max-width:100%}
 .region-switch{display:inline-flex;border:1px solid rgba(255,255,255,.25);border-radius:999px;padding:3px;gap:2px}
 .region-switch button,.region-switch a{border:0;background:none;color:rgba(255,255,255,.75);font-weight:700;font-size:.78rem;padding:.35rem .8rem;border-radius:999px;text-decoration:none}
 .region-switch button.on,.region-switch a.on{background:var(--amber);color:var(--ink)}
-.primary .site-link{white-space:nowrap}
+.store-label{color:rgba(255,255,255,.75);font-weight:700;font-size:.78rem}
 
 /* hero */
 .hero{background:var(--eu-blue);color:#fff;position:relative;overflow:hidden;isolation:isolate}
@@ -824,7 +824,6 @@ const REGIONS={
 const RKEY='snacks-of-europe-region';
 /* SITE is set by tools/build_sites.py for the locked UK and US stores; unset means the combined preview with a toggle */
 const SITE=(window.SITE==='UK'||window.SITE==='US')?window.SITE:null;
-const SITE_URLS={UK:'../uk/',US:'../us/'};
 const SUF=SITE?'-'+SITE.toLowerCase():'';
 let region=SITE||'UK';
 const R=()=>REGIONS[region];
@@ -1076,7 +1075,7 @@ function setQty(id,q){if(q<=0)delete basket[id];else basket[id]=q;saveBasket();r
 function regionButtons(fmt){return Object.values(REGIONS).map(x=>`<button type="button" data-region="${x.code}" class="${x.code===region?'on':''}">${fmt(x)}</button>`).join('');}
 function applyRegion(code,silent){
   region=SITE||(REGIONS[code]?code:'UK');
-  try{localStorage.setItem(RKEY,region);if(SITE)localStorage.setItem('snacks-of-europe-site',SITE);}catch(e){}
+  try{localStorage.setItem(RKEY,region);}catch(e){}
   const r=R();
   document.documentElement.lang=r.lang;
   $('#announceText').innerHTML=r.announce;
@@ -1088,10 +1087,10 @@ function applyRegion(code,silent){
   $('#drawerTitle').textContent=L('Your basket');$('#drawerNote').textContent=L('Delivery and discount codes are applied at checkout.');
   $('#basketBtn').setAttribute('aria-label',L('Open basket'));$('#qvAdd').textContent=L('Add to basket');
   if(SITE){
-    const o=REGIONS[SITE==='UK'?'US':'UK'],href=SITE_URLS[o.code],rb=$('#regionBtn');
-    if(rb&&rb.tagName==='BUTTON'){rb.outerHTML=`<a id="regionBtn" class="site-link" href="${href}" hreflang="${o.lang}" title="Switch to our ${o.short} store">${o.flag} ${o.short} store</a>`;const rm=$('#regionMenu');if(rm)rm.remove();}
-    const mr=$('#mobileRegion');mr.previousElementSibling.textContent='Store';mr.innerHTML=`<a href="${href}" hreflang="${o.lang}"><span class="f">${o.flag}</span>Switch to the ${o.short} store</a>`;
-    $('#footerRegion').innerHTML=Object.values(REGIONS).map(x=>`<a href="${SITE_URLS[x.code]}" hreflang="${x.lang}" class="${x.code===SITE?'on':''}"${x.code===SITE?' aria-current="page"':''}>${x.flag} ${x.code}</a>`).join('');
+    /* a locked store stands alone: no link, menu or switch leads to the other store */
+    const loc=$('#regionBtn');if(loc)loc.closest('li').remove();
+    const mr=$('#mobileRegion');if(mr)mr.closest('li').remove();
+    const fr=$('#footerRegion');fr.className='store-label';fr.removeAttribute('aria-label');fr.textContent=r.flag+' '+r.name;
   }else{
     $('#regionLabel').textContent=r.flag+' '+r.short;
     $('#regionMenu').innerHTML=regionButtons(x=>`<span class="f">${x.flag}</span>${x.name}`);
